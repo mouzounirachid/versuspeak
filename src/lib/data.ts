@@ -511,9 +511,9 @@ export const DEALS: Deal[] = [
   {
     productId: 'samsung-s95f-65',
     oldPrice: 2999,
-    newPrice: 2079,
+    newPrice: 2099,
     retailer: 'Best Buy',
-    note: 'As of Nov 4 the S95F 65-inch sits at $2,077.95 at Best Buy — and a $1,399.99 Walmart flash on Nov 2 shows where Black Friday week can take it.',
+    note: 'As of Nov 4 the S95F 65-inch sits at $2,099 at Best Buy — and a $1,399.99 Walmart flash on Nov 2 shows where Black Friday week can take it.',
     expiresInDays: 20,
     label: 'Black Friday',
   },
