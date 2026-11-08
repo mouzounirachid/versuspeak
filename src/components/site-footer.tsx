@@ -30,8 +30,8 @@ export function SiteFooter({ onNavigate }: { onNavigate: (v: View) => void }) {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-3">
         <div>
           <div className="flex items-baseline gap-1">
-            <span className="font-serif text-2xl font-bold text-white">Tech</span>
-            <span className="font-serif text-2xl font-bold text-orange-500">Verdict</span>
+            <span className="font-serif text-2xl font-bold text-white">Versus</span>
+            <span className="font-serif text-2xl font-bold text-orange-500">Peak</span>
           </div>
           <p className="mt-3 text-sm leading-relaxed text-stone-400">
             Independent testing for real homes. We buy every product at retail — refrigerators, washers,

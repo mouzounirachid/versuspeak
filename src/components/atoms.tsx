@@ -106,7 +106,16 @@ export function DisclosureNote({ onView }: { onView?: () => void }) {
           Learn more
         </button>
       ) : (
-        <span>Learn more in our affiliate disclosure.</span>
+        <span>
+          Learn more in our{' '}
+          <a
+            href="#disclosure"
+            className="font-semibold text-orange-700 underline underline-offset-2 hover:text-orange-800"
+          >
+            affiliate disclosure
+          </a>
+          .
+        </span>
       )}
     </p>
   );

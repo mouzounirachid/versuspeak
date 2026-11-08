@@ -7,7 +7,7 @@ import type { View } from '@/lib/types';
 import { AffiliateCta, BadgeChip, DisclosureNote, ProductThumb, ScoreCircle } from './atoms';
 import { ComparisonTable } from './comparison-table';
 import { CountdownBlocks, CountdownPill } from './countdown';
-import { NewsletterBlock, PromoBanner, ReadNextPromo } from './promo-banners';
+import { PromoBanner, ReadNextPromo } from './promo-banners';
 
 const STAT_ICONS = [FlaskConical, ShoppingBag, Award, ShieldCheck];
 
@@ -349,9 +349,6 @@ export function HomeView({ onNavigate }: { onNavigate: (v: View) => void }) {
             ))}
           </div>
         </section>
-
-        {/* Newsletter — remarketing capture */}
-        <NewsletterBlock />
 
         {/* Methodology teaser */}
         <section aria-labelledby="methodology-teaser" className="pb-6">
