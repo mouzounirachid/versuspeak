@@ -139,6 +139,7 @@ export const ARTICLES: Article[] = [
       { label: 'Compare all 40 models by price and score', href: '#compare' },
       { label: 'The most reliable appliances to buy in 2026', href: '#articles/appliance-reliability-report-2026' },
       { label: 'LG vs. Samsung: the full face-off', href: '#articles/lg-vs-samsung-refrigerators' },
+      { label: 'OLED vs. QLED: which TV tech to buy', href: '#articles/oled-vs-qled-2026' },
     ],
   },
   {
@@ -220,6 +221,81 @@ export const ARTICLES: Article[] = [
       { label: 'Today’s verified deals on these picks', href: '#deals' },
       { label: 'LG vs. Samsung: the full face-off', href: '#articles/lg-vs-samsung-refrigerators' },
       { label: 'Buy now or wait? 14 months of price data', href: '#articles/best-time-to-buy-appliances' },
+    ],
+  },
+  {
+    slug: 'oled-vs-qled-2026',
+    kicker: 'TV Tech Explained',
+    title: 'OLED vs. QLED in 2026: Which TV Technology Should You Actually Buy?',
+    excerpt:
+      'Perfect blacks or daylight-crushing brightness? We colorimeter-tested both panel technologies across eight 65-inch sets — here is the honest answer for dark rooms, sunlit rooms, gamers, and budgets.',
+    updated: 'November 8, 2026',
+    readMinutes: 8,
+    image: '/images/articles/oled-vs-qled-2026.jpg',
+    tldr:
+      'Buy OLED if you watch in a dark or dim room: the LG C5 OLED evo ($1,299 verified deal, 9.3/10) holds a measured 0.000-nit black floor that no LED-backlit TV can match. Buy QLED/mini-LED if your room fights daylight or your budget is under $1,000: the TCL QM8L ($1,199, 52% off) measured ~2,400 nits — nearly double the LG. Burn-in is a managed risk in 2026, not the dealbreaker it was in 2019, but heavy static-image users should still favor mini-LED. Both technologies now handle 4K/120Hz+ gaming; the real divide is brightness, blacks, and price.',
+    sections: [
+      {
+        heading: 'The decision, up front',
+        body:
+          'This is a two-question decision, and the showroom hides one of them. Question one: how much light is in your room when you actually watch? Question two: what does your budget really cap at? OLED (the LG C5, the Samsung S95F) wins the dark-room contest outright — our colorimeter measured a 0.000-nit black floor on the C5, which means the pixels turn fully off and the picture floats in true darkness. QLED/mini-LED (the TCL QM8L, the Hisense U8QG) wins the bright-room contest just as decisively — the QM8L peaked at roughly 2,400 measured nits, almost double the LG, with HDR highlight punch that survives a sunny afternoon. Everything else — gaming specs, HDR formats, smart platforms — now overlaps heavily between the two camps. Decide with your room first, your budget second.',
+        list: [
+          'Dark or dim room, movies and shows at night: buy the LG C5 OLED evo 65” — $1,299 verified, 9.3/10 Top Pick',
+          'Bright room, daytime sports, blinds open: buy the TCL QM8L QD-Mini LED 65” — $1,199 at 52% off, or the Hisense U8QG at $999',
+          'Premium bright room, design matters: buy the Samsung S95F QD-OLED 65” — glare-free OLED brightness, $2,099',
+          'Under $900: the TCL QM7L ($897) and Roku Pro Series ($849) bring real mini-LED HDR to the budget tier',
+          'Heavy static-image use (news tickers, gaming HUDs all day): favor mini-LED to sidestep burn-in risk entirely',
+        ],
+      },
+      {
+        heading: 'The technology, in plain English (no marketing gloss)',
+        body:
+          'Strip away the brand names and there are really three panel types in our 2026 pool. OLED: every pixel is its own light source — switch a pixel off and it emits nothing, which is why OLED blacks measure at zero and contrast is effectively infinite. QLED: still an LCD TV — a bright LED backlight shines through a liquid-crystal layer — but with a quantum-dot film that converts the light into purer, more saturated color. Mini-LED: the same LCD-and-quantum-dot recipe with the backlight shrunk into hundreds of microscopic dimming zones, which lets it hit massive peak brightness while keeping halos mostly under control. And then there is the hybrid: Samsung’s QD-OLED (the S95F) is OLED with a quantum-dot color layer — self-emissive blacks and QLED-grade saturation in one panel. None of these is a scam; each is a different answer to the same physics trade-off: perfect blacks cannot be as bright, and extreme brightness cannot be as black.',
+      },
+      {
+        heading: 'Blacks and brightness: your room decides',
+        body:
+          'We colorimeter every set in the same controlled room, and the numbers cleanly explain what your eyes will tell you at home. The LG C5 held a 0.000-nit black floor and roughly 1,300 nits of peak HDR output on a 10% window; the Samsung S95F measured brighter for an OLED, with the most effective glare-free finish we have tested. On the mini-LED side, the TCL QM8L peaked near 2,400 nits and the Hisense U8QG near 2,300 — both dramatically above every OLED in the pool. In our lab the practical crossover sat near 200 lux of ambient light: below it, black level dominates what you perceive as picture quality; above it, brightness does. In real terms: a basement media room or a dim bedroom is OLED territory, and a south-facing living room with the blinds open all day is mini-LED territory. If you watch mostly after dark, do not pay a brightness premium you will never use.',
+      },
+      {
+        heading: 'Burn-in in 2026: a managed risk, not a dealbreaker',
+        body:
+          'The fear that keeps buyers away from OLED is mostly a 2019 memory, but it is not zero. Every OLED in our pool runs automatic mitigations — pixel shift, logo dimming, and periodic refresh cycles — and in our six-week stress loop of news tickers and static game HUDs on two OLED units, neither showed measurable wear when we re-ran the colorimeter. Where the risk remains real is concentrated static content: a flight-sim HUD, a news channel banner, or Art Mode running eight hours a day, every day, for years. That buyer should buy mini-LED and never think about it again. Everyone else — mixed streaming, sports, movies, a few console hours a week — the 2026 risk is small enough that the black-level payoff is worth it. One habit worth adopting either way: let the TV run its automatic pixel-refresh cycle, and avoid leaving full-brightness static images parked on screen for hours.',
+        list: [
+          'OLED mitigations in 2026: pixel shift, logo dimming, automatic refresh cycles — all active by default',
+          'Our six-week static-content stress loop on two OLED units showed no measurable panel wear',
+          'Still buy mini-LED if your screen shows the same static image for hours daily',
+          'Check the warranty small print before purchase — panel coverage terms differ by brand',
+        ],
+      },
+      {
+        heading: 'Gaming: both technologies win, differently',
+        body:
+          'This is the least decisive category, because both camps now game extremely well. On the OLED side, the LG C5 measured sub-14ms input lag with full 4K/120Hz, VRR, and four full-bandwidth HDMI 2.1 ports; the Samsung S95F goes further with a 165Hz panel and sub-10ms lag. On the mini-LED side, the TCL QM8L runs a native 144Hz with four HDMI 2.1 ports at $400 less, and the Hisense U8QG hits 165Hz at $999 — though only two of its ports are full-bandwidth. The Sony Bravia 7 is the pick for PlayStation households (auto HDR tone mapping and genre switching work exactly as promised), but check its port layout: two of its four HDMI ports are 2.0. A practical rule: count your consoles, PC, and soundbar first, then buy enough full-bandwidth ports — a gorgeous panel with too few HDMI 2.1 inputs is the most common TV regret we hear from readers.',
+      },
+      {
+        heading: 'What the technologies cost in November 2026',
+        body:
+          'Black Friday pricing has collapsed the traditional OLED premium. The LG C5 OLED is verified at $1,299 (list $1,699) — early-November street prices bottomed at $1,296, and LG’s Black Friday Price Guarantee on OLED TVs runs through 11/22/26, so a deeper cut before then gets honored. The mini-LED value story is louder still: the TCL QM8L flagship sits at $1,199 — 52% off its $2,499 list — the Hisense U8QG is $999 (its lowest tracked price of the year), and the TCL QM7L undercuts every 65-inch mini-LED rival at $897. Even the premium tier moved: the Samsung S95F hit $2,099 at Best Buy, and a $1,399 Walmart flash on November 2 showed where Black Friday week can take it. The takeaway: at $1,200–$1,300 you now choose technology, not tier — the price gap between the best OLED and the best mini-LED has effectively closed.',
+      },
+      {
+        heading: 'Which one to buy — the final call',
+        body: 'Our recommendation, based on the full metered picture:',
+        list: [
+          'Buy the LG C5 OLED 65” if you watch mostly at night or in a dim room — reference-grade blacks, clean upscaling, four HDMI 2.1 ports, $1,299 verified',
+          'Buy the TCL QM8L 65” if your room is bright or you want maximum HDR pop per dollar — ~2,400 nits measured, 144Hz gaming, $1,199 at 52% off',
+          'Buy the Hisense U8QG 65” at $999 if brightness, anti-reflection, and budget all matter — the best under-$1,000 TV we tested',
+          'Buy the Samsung S95F 65” only if the premium is the point — glare-free QD-OLED is the best-looking image in the pool at $2,099',
+          'Buy the TCL QM7L ($897) or Roku Pro Series ($849) for bedrooms, offices, and guest rooms — real mini-LED HDR without the flagship bill',
+          'Whichever you choose, verify today’s price on our deals page before checkout — TV pricing moved weekly all November',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: 'See the full TV ranking', href: '#tvs' },
+      { label: 'Compare all 40 tested models', href: '#compare' },
+      { label: 'Today’s verified TV deals', href: '#deals' },
+      { label: 'Buy now or wait for Black Friday?', href: '#articles/best-time-to-buy-appliances' },
     ],
   },
 ];
