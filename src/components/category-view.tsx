@@ -13,7 +13,7 @@ const ARTICLE_FOR_CATEGORY: Record<Category['id'], string> = {
   washers: 'appliance-reliability-report-2026',
   dryers: 'appliance-reliability-report-2026',
   dishwashers: 'appliance-reliability-report-2026',
-  tvs: 'best-time-to-buy-appliances',
+  tvs: 'oled-vs-qled-2026',
 };
 
 export function CategoryView({ category, onNavigate }: { category: Category; onNavigate: (v: View) => void }) {
