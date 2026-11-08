@@ -63,6 +63,8 @@ export const ARTICLES: Article[] = [
       { label: 'See the full refrigerator ranking', href: '#refrigerators' },
       { label: 'Compare both picks side by side', href: '#compare' },
       { label: 'Today’s verified prices on both models', href: '#deals' },
+      { label: 'The most reliable refrigerators of 2026', href: '#articles/appliance-reliability-report-2026' },
+      { label: 'Buy now or wait for Black Friday?', href: '#articles/best-time-to-buy-appliances' },
     ],
   },
   {
@@ -136,6 +138,7 @@ export const ARTICLES: Article[] = [
       { label: 'See today’s verified deals on tested picks', href: '#deals' },
       { label: 'Compare all 40 models by price and score', href: '#compare' },
       { label: 'The most reliable appliances to buy in 2026', href: '#articles/appliance-reliability-report-2026' },
+      { label: 'LG vs. Samsung: the full face-off', href: '#articles/lg-vs-samsung-refrigerators' },
     ],
   },
   {
@@ -215,6 +218,8 @@ export const ARTICLES: Article[] = [
       { label: 'See the full washer ranking', href: '#washers' },
       { label: 'Compare all 40 tested models', href: '#compare' },
       { label: 'Today’s verified deals on these picks', href: '#deals' },
+      { label: 'LG vs. Samsung: the full face-off', href: '#articles/lg-vs-samsung-refrigerators' },
+      { label: 'Buy now or wait? 14 months of price data', href: '#articles/best-time-to-buy-appliances' },
     ],
   },
 ];
