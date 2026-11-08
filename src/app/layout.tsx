@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     "lab tested appliances",
   ],
   applicationName: "VersusPeak",
+  alternates: {
+    canonical: "/",
+  },
   authors: [{ name: "VersusPeak Lab" }],
   robots: {
     index: true,
