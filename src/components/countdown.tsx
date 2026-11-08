@@ -42,12 +42,17 @@ function useCountdown() {
 
 const pad = (n: number) => String(n).padStart(2, '0');
 
-/** Compact inline pill: "20d 04h 12m" — renders a placeholder until mounted (no hydration mismatch). */
+/**
+ * Compact inline pill: "20d 04h 12m" — renders a placeholder until mounted (no hydration mismatch).
+ * High-visibility treatment: bright amber chip + dark-red digits. Amber (vs. the site's orange
+ * accent) was chosen so the pill stands out on the orange/red top banner, on dark stone banners,
+ * and on light pages alike (~7:1 contrast for the digits on the chip).
+ */
 export function CountdownPill({ dark = false }: { dark?: boolean }) {
   const r = useCountdown();
   if (!r) {
     return (
-      <span className={`inline-flex h-7 items-center rounded-full px-3 text-xs font-bold tabular-nums ${dark ? 'bg-white/10 text-white/70' : 'bg-stone-200/60 text-stone-400'}`}>
+      <span className={`inline-flex h-7 items-center rounded-full px-3 text-xs font-bold tabular-nums ${dark ? 'bg-amber-300/50 text-red-900/50' : 'bg-amber-200/70 text-amber-800/70'}`}>
         —d —h —m
       </span>
     );
@@ -55,14 +60,14 @@ export function CountdownPill({ dark = false }: { dark?: boolean }) {
   const expired = r.days === 0 && r.hours === 0 && r.minutes === 0 && r.seconds === 0;
   if (expired) {
     return (
-      <span className="inline-flex h-7 items-center gap-1.5 rounded-full bg-orange-600 px-3 text-xs font-bold uppercase tracking-wider text-white">
+      <span className="inline-flex h-7 items-center gap-1.5 rounded-full bg-red-600 px-3 text-xs font-bold uppercase tracking-wider text-white shadow-sm">
         <Flame className="h-3.5 w-3.5" aria-hidden /> Live now
       </span>
     );
   }
   return (
     <span
-      className={`inline-flex h-7 items-center rounded-full px-3 text-xs font-bold tabular-nums ${dark ? 'bg-white/10 text-orange-300' : 'bg-orange-100 text-orange-800'}`}
+      className={`inline-flex h-7 items-center rounded-full bg-amber-300 px-3 text-xs font-bold tabular-nums text-red-900 shadow-sm ${dark ? 'ring-1 ring-white/40' : 'ring-1 ring-red-900/15'}`}
       aria-label={`Black Friday starts in ${r.days} days ${r.hours} hours`}
     >
       {r.days}d {pad(r.hours)}h {pad(r.minutes)}m
@@ -92,10 +97,14 @@ export function CountdownBlocks({ dark = false }: { dark?: boolean }) {
       {cells.map((c) => (
         <div
           key={c.label}
-          className={`flex min-w-[3.25rem] flex-col items-center rounded-xl px-2.5 py-2 ${dark ? 'bg-white/10 ring-1 ring-white/15' : 'bg-stone-950 text-white'}`}
+          className={`flex min-w-[3.25rem] flex-col items-center rounded-xl px-2.5 py-2 ${
+            dark
+              ? 'bg-amber-300 shadow-lg shadow-amber-500/25 ring-1 ring-amber-200/70'
+              : 'bg-stone-950 ring-1 ring-amber-500/30'
+          }`}
         >
-          <span className="font-serif text-xl font-bold leading-none tabular-nums md:text-2xl">{c.value}</span>
-          <span className={`mt-1 text-[9px] font-bold uppercase tracking-widest ${dark ? 'text-stone-400' : 'text-stone-400'}`}>{c.label}</span>
+          <span className={`font-serif text-xl font-bold leading-none tabular-nums md:text-2xl ${dark ? 'text-red-900' : 'text-amber-300'}`}>{c.value}</span>
+          <span className={`mt-1 text-[9px] font-bold uppercase tracking-widest ${dark ? 'text-red-800/90' : 'text-stone-400'}`}>{c.label}</span>
         </div>
       ))}
     </div>
