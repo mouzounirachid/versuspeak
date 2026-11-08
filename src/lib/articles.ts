@@ -140,6 +140,8 @@ export const ARTICLES: Article[] = [
       { label: 'The most reliable appliances to buy in 2026', href: '#articles/appliance-reliability-report-2026' },
       { label: 'LG vs. Samsung: the full face-off', href: '#articles/lg-vs-samsung-refrigerators' },
       { label: 'OLED vs. QLED: which TV tech to buy', href: '#articles/oled-vs-qled-2026' },
+      { label: 'Speed Queen vs. LG: the laundry face-off', href: '#articles/speed-queen-vs-lg' },
+      { label: 'Bosch vs. Miele: the premium dishwasher duel', href: '#articles/bosch-vs-miele-dishwashers' },
     ],
   },
   {
@@ -221,6 +223,8 @@ export const ARTICLES: Article[] = [
       { label: 'Today’s verified deals on these picks', href: '#deals' },
       { label: 'LG vs. Samsung: the full face-off', href: '#articles/lg-vs-samsung-refrigerators' },
       { label: 'Buy now or wait? 14 months of price data', href: '#articles/best-time-to-buy-appliances' },
+      { label: 'Speed Queen vs. LG: the laundry face-off', href: '#articles/speed-queen-vs-lg' },
+      { label: 'Bosch vs. Miele: the premium dishwasher duel', href: '#articles/bosch-vs-miele-dishwashers' },
     ],
   },
   {
@@ -296,6 +300,170 @@ export const ARTICLES: Article[] = [
       { label: 'Compare all 40 tested models', href: '#compare' },
       { label: 'Today’s verified TV deals', href: '#deals' },
       { label: 'Buy now or wait for Black Friday?', href: '#articles/best-time-to-buy-appliances' },
+    ],
+  },
+  {
+    slug: 'speed-queen-vs-lg',
+    kicker: 'Brand Face-Off',
+    title: 'Speed Queen vs. LG: Which Laundry Brand Should You Buy in 2026?',
+    excerpt:
+      'A laundromat-grade drivetrain built for 25 years, or the fastest, most efficient pair we ever tested? We ran both lineups through the same gauntlet — stain strips, metered lines, and a teardown table.',
+    updated: 'November 9, 2026',
+    readMinutes: 8,
+    image: '/images/articles/speed-queen-vs-lg.jpg',
+    tldr:
+      'Buy the LG pair for most homes: the WM4000HWA washer ($1,149) removed 97% of our test stains, and the DLEX4000W dryer is $999 at Best Buy right now — a pair that is faster, quieter, and dramatically more efficient than Speed Queen. Buy the Speed Queen TC5/DF7 pair ($3,698 as priced today) if 25-year durability outranks speed, capacity, and utility bills: seven-year parts-and-labor coverage on both machines is the longest warranty in the industry, and the drivetrain is the same one Speed Queen sells to laundromats. LG wins performance per dollar; Speed Queen wins the decades.',
+    sections: [
+      {
+        heading: 'The decision, up front',
+        body:
+          'This is not a close matchup on spec sheets: LG wins nearly every performance number we measured, and most by a wide margin. Speed Queen wins exactly two categories — expected lifespan and warranty coverage — and for a specific kind of buyer those two outweigh everything else combined. We ran both brand lineups through the same gauntlet: identical stain strips, identical 9-pound mixed loads, metered water and electric lines, and a teardown table. If you want the shortest, cheapest, quietest laundry day, the answer is LG, and the gap is not subtle. If you want machines your family will still be running in 2050, the answer is Speed Queen, and that gap is not subtle either.',
+        list: [
+          'Most households: buy the LG WM4000HWA washer ($1,149) with the DLEX4000W dryer — $999 at Best Buy right now, a live $300 Black Friday cut',
+          'Buy the Speed Queen TC5 ($1,799) if you want a 25-year agitator machine and accept a smaller tub plus higher water and power bills',
+          'Buy the Speed Queen DF7 ($1,899) if you run three-plus loads back to back on Saturdays and want nothing fragile in the room',
+          'Same philosophy on a budget: the Maytag MVW6230HW ($799 deal) and MED6230HW ($999) are the value middle ground',
+          'The wrong pick is paying Speed Queen money for features it deliberately lacks, or expecting LG electronics to outlive a mechanical drivetrain',
+        ],
+      },
+      {
+        heading: 'Two brands, two definitions of “best”',
+        body:
+          'Speed Queen is the only brand in our pool whose home machines carry commercial laundry DNA: the TC5 and DF7 use the same stainless drum and all-metal drive philosophy the company sells to laundromats, engineered around a 25-year design life, with controls simple enough that there is little to fail. LG builds consumer electronics that wash clothes brilliantly: a direct-drive inverter motor, moisture sensors, TurboWash speed cycles, and app control, backed by a 10-year motor warranty but only one year on everything else. You can see the two philosophies in three numbers. The TC5 spins at 710 RPM against the LG washer’s 1,300; the DF7 offers 5 cycles against the DLEX4000W’s 14; and the Speed Queen warranty runs seven years on parts and labor while LG’s covers one. Neither approach is hiding a weakness — you are choosing between a tractor and a sports car, and both are honestly built.',
+      },
+      {
+        heading: 'The washers head-to-head: clean clothes, two different roads',
+        body:
+          'The TC5’s classic agitator cleaned superbly — 9.3/10 on our scored strips, rolling muddy loads the way machines have for fifty years — but it is a 3.2-cu.-ft. tub (the smallest in our pool), and its 710-RPM spin leaves cottons wetter, which means every load pays the time back in the dryer. It also drew measurably more water and power on our metered lines: a 7.2 efficiency score against the LG’s 9.4. The WM4000HWA is the reverse bet: 9.6 cleaning performance with 97% stain removal — the best in our pool — a TurboWash 360 full cycle in 30 minutes with no cleaning penalty, a 4.5-cu.-ft. drum, and a 1,300-RPM spin that hands the dryer a head start. It was quiet even at max spin on our hardwood test floor. For most families doing most laundry, the LG is simply the better tool; the TC5 is the better heirloom.',
+        list: [
+          'Cleaning scores: LG 9.6 vs. Speed Queen 9.3 — both excellent, different mechanisms',
+          'Capacity: 4.5 vs. 3.2 cu. ft. — a king comforter fits in the LG, not in the TC5',
+          'Efficiency: 9.4 vs. 7.2 — the TC5 costs visibly more in water and power every month',
+        ],
+      },
+      {
+        heading: 'The dryers head-to-head: accuracy and speed vs. brute simplicity',
+        body:
+          'The DLEX4000W dried a 9-pound mixed load completely in 52 minutes — the fastest vented result we recorded — and its sensors ended every cycle within 2% of target dryness, which is the number that actually protects your clothes from overdrying. It adds TurboSteam for dewrinkling and gym-clothes refresh, and it was the quietest vented unit in the pool at 64 dB. The DF7 does none of that on paper: five cycles, four temperatures, no steam, no app, and 69 dB at max spin. What it did instead was run three back-to-back king-size loads without a thermal cutout while our testers cooked dinner beside it — the laundromat proof of concept in one afternoon. Drying scores landed at 9.5 for the LG against 8.6 for the Speed Queen, but the honest framing is simpler: the LG finishes faster and treats fabric better; the DF7 just does not stop.',
+        list: [
+          'Dry time, 9-lb mixed load: 52 minutes on the LG, our fastest vented result',
+          'Sensor accuracy: the LG ended within 2% of target dryness on every cycle we logged',
+          'Durability demo: the DF7 swallowed three consecutive king loads with no cutouts',
+        ],
+      },
+      {
+        heading: 'Reliability and warranty: where Speed Queen pulls away',
+        body:
+          'This is the section Speed Queen exists for. Both SQ machines carry a seven-year parts-and-labor warranty — the longest coverage we track by years — because the company designs for a 25-year family service life, and our teardown backed the claim: the drum, drive, and suspension hardware are the same architecture Speed Queen installs in commercial laundromats. Fewer electronic components also means fewer failure points, and our reliability reporting keeps confirming the pattern: dryers fail least of all appliances, and simple machines fail cheapest. LG’s record is genuinely good — the direct-drive motor carries a 10-year warranty — but the WM4000HWA and DLEX4000W carry control boards, door locks, pumps, and sensors the Speed Queens do not have, and a one-year parts-and-labor window is the industry norm, not a statement of confidence. One practical caveat before you buy Speed Queen: it is the one brand here most often sold through local appliance dealers, so check the quality of service support in your area first — a great warranty is only as good as the technician who honors it.',
+        list: [
+          'Speed Queen: 7-year parts & labor on both machines — the longest coverage we track',
+          'LG: 1 year full coverage; 10-year motor on the washer, 3-year smart board on the dryer',
+          'Our reliability data: fewer electronics in wet zones has been the winning pattern for a decade',
+        ],
+      },
+      {
+        heading: 'What each pair really costs to own',
+        body:
+          'The sticker math first. The LG pair costs $2,148 as priced today — the WM4000HWA at $1,149 and the DLEX4000W at $999 in Best Buy’s Black Friday deal. The Speed Queen pair lists at $3,698, a $1,550 premium — about 72% more — and Speed Queen does not discount: its list prices held flat through the 14 months of price tracking behind our timing guide, while LG laundry pricing moved weekly in November. Then the running math works the same direction: the TC5’s 7.2 efficiency score means more water and electricity per load, and its slower spin feeds wetter clothes to your dryer, so you pay the difference twice. Over ten years the LG pair is convincingly cheaper to own. Speed Queen’s case is the decade after that: if the machines truly run 25 years, buying one pair instead of two is worth roughly what the gap costs — which is exactly the bet you are making.',
+        list: [
+          'LG pair today: $2,148 ($1,149 washer + $999 dryer deal at Best Buy)',
+          'Speed Queen pair: $3,698 ($1,799 + $1,899), and SQ prices never move',
+          'Utilities: the LG’s 9.4 efficiency score vs. 7.2 compounds every single load',
+        ],
+      },
+      {
+        heading: 'Which pair to buy — the final call',
+        body: 'Our recommendation, based on the full metered picture:',
+        list: [
+          'Buy the LG WM4000HWA + DLEX4000W pair if you want the fastest, quietest, most efficient laundry room for the money — $2,148 as priced today, with the $999 dryer deal live at Best Buy',
+          'Buy the Speed Queen TC5 if you wash small, rugged, frequent loads and want the machine your kids inherit — accept the 3.2-cu.-ft. tub and higher bills',
+          'Buy the Speed Queen DF7 if durability outranks features on your list — five cycles, zero fragility, seven years of coverage',
+          'A legitimate mixed marriage: the TC5 washer paired with the LG dryer — the agitator scrubs, the LG finishes fast and quiet',
+          'Whichever pair you choose, verify today’s price on our deals page before checkout — laundry pricing moved weekly all November',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: 'See the full washer ranking', href: '#washers' },
+      { label: 'See the full dryer ranking', href: '#dryers' },
+      { label: 'Compare all 40 tested models', href: '#compare' },
+      { label: 'Today’s verified laundry deals', href: '#deals' },
+      { label: 'The most reliable appliances of 2026', href: '#articles/appliance-reliability-report-2026' },
+      { label: 'Buy now or wait? 14 months of price data', href: '#articles/best-time-to-buy-appliances' },
+    ],
+  },
+  {
+    slug: 'bosch-vs-miele-dishwashers',
+    kicker: 'Brand Face-Off',
+    title: 'Bosch vs. Miele: Which Premium Dishwasher Is Worth It in 2026?',
+    excerpt:
+      'The two brands that define the premium aisle go head to head: Bosch’s 800 Series CrystalDry against Miele’s AutoDos. We metered, loaded, and listened to both for a month — here is where your money goes further.',
+    updated: 'November 9, 2026',
+    readMinutes: 8,
+    image: '/images/articles/bosch-vs-miele-dishwashers.jpg',
+    tldr:
+      'Buy the Bosch 800 Series SHP78CM5N for most kitchens: $1,149 at Amazon (down from $1,349), 9.5/10, the quietest machine we measured at 42 dBa, and the only dishwasher whose zeolite CrystalDry made plastic containers come out genuinely dry. The Miele G 7566 SCVi ($1,899 at Best Buy, 9.3/10) is the buy-once option: engineered and endurance-tested for 20 years, with the brilliant AutoDos detergent system and a panel-ready door for custom kitchens — but it costs $750 more plus PowerDisk refills. Want 90% of both for less? The LG QuadWash Pro at $849 is the value challenger.',
+    sections: [
+      {
+        heading: 'The decision, up front',
+        body:
+          'Bosch and Miele are the only two brands in our pool that treat the dishwasher as an engineering statement rather than a feature checklist, and both executed beautifully. The Bosch 800 Series wins the measurable day-to-day categories: 42 dBa against the Miele’s 45 — the difference between straining to hear it and simply never noticing it — plus the best third rack we have loaded, and the only drying system that made plastics bone-dry. The Miele wins the long game: it is designed and endurance-tested to 20 years of use, its AutoDos PowerDisk is the most convenient detergent solution we have used, and the panel-ready door disappears completely into custom cabinetry. At today’s deals the gap is $750. Decide with your timeline and your kitchen: Bosch is the best machine for the next decade of dish cycles; Miele is the last dishwasher this house may ever need.',
+        list: [
+          'Most kitchens: Bosch 800 Series SHP78CM5N — $1,149 at Amazon, 9.5/10, our Top Pick',
+          'Custom kitchen, 20-year horizon: Miele G 7566 SCVi — $1,899 at Best Buy, 9.3/10, panel-ready',
+          'Value challenger: LG QuadWash Pro — $849 at Best Buy, 8.9/10, steam pre-wash, 48 dBa',
+          'Rack flexibility rules: KitchenAid ProWash FreeFlex — $1,029, the most adaptable third rack after Bosch’s',
+        ],
+      },
+      {
+        heading: 'What the $750 gap actually buys',
+        body:
+          'At today’s verified prices the Bosch costs $1,149 at Amazon (cut from its $1,349 street price for Black Friday) and the Miele costs $1,899 at Best Buy, down from $2,199 — a $750 gap between the two deals. For that money the Miele adds four things: a build standard endurance-tested to 20 years of household use; the AutoDos PowerDisk, which doses detergent automatically for about 20 loads at a time; full panel-ready integration that vanishes behind a custom cabinet door; and sensor wash that measurably adapted water and energy to each load in our metered tests. The Bosch counters with the stronger immediate machine: better drying on the materials people actually complain about, a lower measured noise floor, the best third rack in the test, and a lower everyday price. Nothing about the Miele is a rip-off — every dollar lands somewhere real. It is simply aimed at a kitchen and a horizon most buyers do not have.',
+      },
+      {
+        heading: 'Cleaning and drying: two different masterpieces',
+        body:
+          'Both machines destroyed our worst soiled-load test — baked-on lasagna and egg plates came out clean with no pre-rinse — and both scored at the top of the pool: 9.7 cleaning for the Bosch, 9.6 for the Miele. The separating category was drying, and it was not close. Bosch’s CrystalDry uses a zeolite mineral bed that absorbs moisture and releases heat with no heating element, and it did something we had never recorded before this generation: plastic containers and lids came out genuinely dry. The Miele’s AutoOpen approach pops the door at the end of the cycle to let steam escape, then Perfect Dry finishes with residual heat — it dried ceramics and glass flawlessly, but plastics held moisture unless you opened the door promptly. If your household runs a lot of plastic — baby bottles, food containers, kids’ cups — that single difference settles the argument. For everyone else, both dry as well as dishwashers do in 2026.',
+      },
+      {
+        heading: 'Noise: both are library-quiet, one is quieter',
+        body:
+          'We measured 42 dBa for the Bosch and 45 dBa for the Miele, and both numbers are excellent — 45 dBa is quieter than most conversations and typical of the premium tier. But three decibels is not nothing when the machine shares open-plan space with a home office or a nursery: the Bosch was the only unit in the pool we could run during a recorded video call without a second thought, and its InfoLight — a small dot projected on the floor so you know it is running — exists precisely because you cannot hear it. The Miele is not loud by any standard; it is simply not the quietest machine we tested this year, and the Bosch is. If silence is a spec you care about, the ordering is clear.',
+      },
+      {
+        heading: 'Racks, cycles, and the small print',
+        body:
+          'Loading 16 place settings into the Bosch was the more pleasant chore: the MyWay third rack swallows utensils and small cups, the middle rack adjusts on multiple levels, and our worst-day test load fit without the usual Tetris. The Miele answers with the classic European 3D cutlery tray and FlexCare baskets — brilliant once learned, occasionally frustrating for guests — and its fully integrated panel means no controls visible at all. Both brands share one honest flaw: long cycles. The Bosch’s normal cycle runs about 2h15m — the longest in our group — and the Miele’s sensor programs are no sprint either; both machines use soil sensing to skip wasted fills, so the clock is part of the price of the efficiency. The small print matters too: the Bosch carries a lifetime warranty against tub rust-through and needs no consumables, while the Miele’s PowerDisk refills add a running cost its sticker does not advertise, and the panel-ready door requires buying and mounting a custom panel.',
+      },
+      {
+        heading: 'Longevity: the 20-year question',
+        body:
+          'Miele builds every G-series dishwasher to a 20-year test standard, and it is the only brand in our pool that says so with test data behind it; our reliability reporting has independently flagged both Miele and the Bosch 800 line as the machines engineered for two-decade lives. The Bosch counters with a lifetime warranty against rust-through on its stainless tub and a U.S. service network that is far easier to find — a real advantage when something does break in year six. Running costs split the same way: the Bosch’s zeolite drying needs no consumables and its 9.4 efficiency score led the group, while the Miele’s AutoDos saves detergent waste but tethers you to proprietary PowerDisks. The honest summary: Bosch makes the premium dishwasher most people should buy, and Miele makes the one enthusiasts and custom-kitchen owners never regret.',
+        list: [
+          'Bosch: lifetime tub rust-through warranty, wide U.S. service network, no consumables',
+          'Miele: 20-year test standard, extended warranties to 5 years, PowerDisk refills',
+          'Both: sensor-adapted fills, top-of-pool efficiency, long normal cycles',
+        ],
+      },
+      {
+        heading: 'Which one to buy — the final call',
+        body: 'Our recommendation, based on the full metered picture:',
+        list: [
+          'Buy the Bosch 800 Series SHP78CM5N if you want the best all-around premium dishwasher — 42 dBa, CrystalDry for plastics, the best third rack, $1,149 at Amazon (9.5/10)',
+          'Buy the Miele G 7566 SCVi if a panel-ready door and a 20-year horizon justify the premium — AutoDos is the most convenient detergent system we have used ($1,899 at Best Buy, 9.3/10)',
+          'Buy the LG QuadWash Pro if you want 90% of both for $849 — steam pre-wash, TrueSteam on baked-on sauce, 48 dBa, $300 under the Bosch deal (8.9/10)',
+          'Buy the KitchenAid ProWash FreeFlex ($1,029) if rack reconfiguration matters more than the last decibel',
+          'Under $800, the Samsung DW80CG4020 ($749) cleans like machines twice its price with a 5-year rack-and-tub warranty',
+          'Whichever you choose, verify today’s price on our deals page before checkout — premium dishwasher pricing moved weekly all November',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: 'See the full dishwasher ranking', href: '#dishwashers' },
+      { label: 'Compare all 40 tested models', href: '#compare' },
+      { label: 'Today’s verified dishwasher deals', href: '#deals' },
+      { label: 'The most reliable appliances of 2026', href: '#articles/appliance-reliability-report-2026' },
+      { label: 'Buy now or wait? 14 months of price data', href: '#articles/best-time-to-buy-appliances' },
     ],
   },
 ];
