@@ -1,12 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { SITE } from '@/lib/data';
+
+const CONTACT_EMAIL = 'contact@versuspeak.com';
 
 function LegalShell({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -32,7 +28,7 @@ export function PrivacyView() {
       <p>
         VersusPeak collects standard, anonymous analytics: pages visited, approximate region, device and browser
         type, and referral source. This data comes from Google Analytics and our ad partners and never includes
-        your name unless you send it to us directly (for example, through the contact form).
+        your name unless you send it to us directly (for example, by emailing us).
       </p>
       <H2>Cookies and advertising</H2>
       <p>
@@ -64,7 +60,7 @@ export function PrivacyView() {
       </p>
       <H2>Contact</H2>
       <p>
-        Questions about this policy can be sent through the contact form on this site. We answer every legitimate
+        Questions about this policy can be sent to {CONTACT_EMAIL}. We answer every legitimate
         privacy request.
       </p>
     </LegalShell>
@@ -151,90 +147,42 @@ export function TermsView() {
 }
 
 export function ContactView() {
-  const [sent, setSent] = useState(false);
-  const [subject, setSubject] = useState('');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
-
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!name.trim() || !email.trim() || !message.trim() || !subject) {
-      setError('Please fill in every field, including the subject.');
-      return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setError('Please enter a valid email address.');
-      return;
-    }
-    setError('');
-    setSent(true);
-  };
-
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="font-serif text-4xl font-bold text-stone-900">Contact VersusPeak</h1>
       <p className="mt-5 leading-relaxed text-stone-700">
-        Questions about a ranking, a correction request, a press inquiry, or a privacy request — send it here.
-        We read everything and reply to legitimate messages within two business days.
+        Questions about a ranking, a correction request, a press inquiry, or a privacy request — we read
+        everything and reply to legitimate messages within two business days.
       </p>
 
-      {sent ? (
-        <div className="mt-8 rounded-lg border border-green-700 bg-green-50 p-6">
-          <h2 className="font-serif text-xl font-bold text-green-800">Message received</h2>
-          <p className="mt-2 text-sm leading-relaxed text-green-900">
-            Thank you, {name.trim()}. A member of the team will reply to {email.trim()} within two business
-            days. (Demo form — connect your email backend or a service like Formspree before launch.)
-          </p>
-        </div>
-      ) : (
-        <form onSubmit={submit} className="mt-8 space-y-5" noValidate>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div className="space-y-2">
-              <Label htmlFor="contact-name">Your name</Label>
-              <Input id="contact-name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Jane Smith" />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="contact-email">Email</Label>
-              <Input id="contact-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="jane@example.com" />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="contact-subject">Subject</Label>
-            <Select value={subject} onValueChange={setSubject}>
-              <SelectTrigger id="contact-subject">
-                <SelectValue placeholder="Choose a topic" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="ranking">Question about a ranking</SelectItem>
-                <SelectItem value="correction">Correction request</SelectItem>
-                <SelectItem value="testing">Suggest an appliance to test</SelectItem>
-                <SelectItem value="privacy">Privacy / data request</SelectItem>
-                <SelectItem value="press">Press & partnerships</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="contact-message">Message</Label>
-            <Textarea
-              id="contact-message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              rows={6}
-              placeholder="Tell us what is on your mind…"
-            />
-          </div>
-          {error && (
-            <p role="alert" className="text-sm font-semibold text-red-600">
-              {error}
-            </p>
-          )}
-          <Button type="submit" className="bg-orange-600 px-8 text-sm font-bold uppercase tracking-wide hover:bg-orange-700">
-            Send message
-          </Button>
-        </form>
-      )}
+      <div className="mt-8 rounded-lg border border-stone-300 bg-stone-50 p-6 text-center sm:p-8">
+        <h2 className="font-serif text-xl font-bold text-stone-900">Email us directly</h2>
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          className="mt-3 inline-block text-2xl font-bold text-orange-700 underline underline-offset-4 hover:text-orange-800"
+        >
+          {CONTACT_EMAIL}
+        </a>
+        <p className="mt-3 text-sm leading-relaxed text-stone-600">
+          We reply from this address — add it to your contacts so our answer never lands in spam.
+        </p>
+      </div>
+
+      <div className="mt-8">
+        <h2 className="font-serif text-xl font-bold text-stone-900">What readers write us about</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 leading-relaxed text-stone-700">
+          <li>Questions about a ranking or a test score</li>
+          <li>Correction requests — we fix confirmed errors within 48 hours</li>
+          <li>Privacy and data requests (GDPR / CCPA), answered within 30 days</li>
+          <li>Press and partnership inquiries</li>
+        </ul>
+      </div>
+
+      <p className="mt-8 text-sm leading-relaxed text-stone-600">
+        Please note: we cannot place orders on your behalf, resolve delivery disputes, or process returns —
+        for anything after checkout, contact the retailer you bought from directly (Amazon, Best Buy, Lowe’s,
+        or Home Depot).
+      </p>
     </div>
   );
 }
