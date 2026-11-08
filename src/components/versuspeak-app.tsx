@@ -41,7 +41,7 @@ function MobileCtaBar({ current, onNavigate }: { current: View; onNavigate: (v: 
           onClick={() => onNavigate('deals')}
           className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-orange-500 to-orange-600 px-4 py-3 text-xs font-bold uppercase tracking-wide text-white shadow-lg shadow-orange-600/25 transition-transform active:scale-[0.98]"
         >
-          <Flame className="h-4 w-4" aria-hidden /> BF deals · up to 52%
+          <Flame className="h-4 w-4 shrink-0" aria-hidden /> <span className="leading-tight">Black Friday · up to 52%</span>
         </button>
         <button
           onClick={() => onNavigate(current === 'compare' ? 'refrigerators' : 'compare')}

@@ -31,18 +31,22 @@ export function SiteHeader({ current, onNavigate }: { current: View; onNavigate:
     <header className="sticky top-0 z-40 border-b border-stone-200/80 bg-white/90 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
       <button
         onClick={() => go('deals')}
-        className="group flex w-full items-center justify-center gap-3 bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 bg-[length:200%_100%] px-4 py-2.5 text-center text-xs font-semibold text-white transition-[background-position] duration-700 hover:bg-right"
+        className="group flex w-full items-center justify-center gap-2.5 bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 bg-[length:200%_100%] px-4 py-3 text-center text-xs font-semibold text-white transition-[background-position] duration-700 hover:bg-right sm:gap-3 sm:text-sm"
         aria-label="Black Friday deals are live — see all deals"
       >
-        <Tag className="h-3.5 w-3.5 shrink-0 transition-transform group-hover:-rotate-12" aria-hidden />
+        <Tag className="h-4 w-4 shrink-0 transition-transform group-hover:-rotate-12" aria-hidden />
         <span className="truncate">
-          Black Friday 2026: appliance &amp; TV deals are live — <strong className="font-bold">up to 52% off</strong> our tested picks
+          <strong className="font-extrabold uppercase tracking-wider">Black Friday 2026</strong>
+          <span className="hidden sm:inline"> — appliance &amp; TV deals are live · </span>
+          <span className="sm:hidden"> · </span>
+          <strong className="inline-block -translate-y-px rounded-full bg-white px-2 py-0.5 font-extrabold uppercase tracking-wide text-red-700 shadow-sm">up to 52% off</strong>
+          <span className="hidden sm:inline"> our tested picks</span>
         </span>
         <span className="hidden items-center gap-2 md:inline-flex">
           <span className="h-1 w-1 rounded-full bg-white/60" aria-hidden />
           <CountdownPill dark />
         </span>
-        <Zap className="h-3.5 w-3.5 shrink-0" aria-hidden />
+        <Zap className="h-4 w-4 shrink-0" aria-hidden />
       </button>
 
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
@@ -75,7 +79,7 @@ export function SiteHeader({ current, onNavigate }: { current: View; onNavigate:
             onClick={() => go('deals')}
             className="hidden items-center gap-1.5 whitespace-nowrap rounded-xl bg-gradient-to-b from-orange-500 to-orange-600 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-md shadow-orange-600/25 transition-all hover:-translate-y-0.5 hover:shadow-lg xl:inline-flex"
           >
-            <Zap className="h-3.5 w-3.5" aria-hidden /> BF Deals
+            <Zap className="h-3.5 w-3.5" aria-hidden /> Black Friday Deals
           </button>
 
           <Sheet open={open} onOpenChange={setOpen}>
