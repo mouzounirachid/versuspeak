@@ -10,9 +10,9 @@ import { PromoBanner, ReadNextPromo } from './promo-banners';
 
 const ARTICLE_FOR_CATEGORY: Record<Category['id'], string> = {
   refrigerators: 'lg-vs-samsung-refrigerators',
-  washers: 'appliance-reliability-report-2026',
-  dryers: 'appliance-reliability-report-2026',
-  dishwashers: 'appliance-reliability-report-2026',
+  washers: 'speed-queen-vs-lg',
+  dryers: 'speed-queen-vs-lg',
+  dishwashers: 'bosch-vs-miele-dishwashers',
   tvs: 'oled-vs-qled-2026',
 };
 
