@@ -39,7 +39,7 @@ export function SiteHeader({ current, onNavigate }: { current: View; onNavigate:
           <strong className="font-extrabold uppercase tracking-wider">Black Friday 2026</strong>
           <span className="hidden sm:inline"> — appliance &amp; TV deals are live · </span>
           <span className="sm:hidden"> · </span>
-          <strong className="inline-block -translate-y-px rounded-full bg-white px-2 py-0.5 font-extrabold uppercase tracking-wide text-red-700 shadow-sm">up to 52% off</strong>
+          <strong className="inline-block -translate-y-px rounded-full bg-white px-2 py-0.5 font-extrabold uppercase tracking-wide text-red-700 shadow-sm">up to 48% off</strong>
           <span className="hidden sm:inline"> our tested picks</span>
         </span>
         <span className="hidden items-center gap-2 md:inline-flex">

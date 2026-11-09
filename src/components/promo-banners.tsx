@@ -33,7 +33,7 @@ export function PromoBanner({ variant = 'deals', slug }: { variant?: 'deals' | '
               Featured — VersusPeak Deals
             </span>
             <span className="font-serif text-lg font-bold leading-snug text-white md:text-xl">
-              Black Friday: up to <span className="text-orange-400">52% off</span> our tested picks
+              Black Friday: up to <span className="text-orange-400">48% off</span> our tested picks
             </span>
           </span>
         </span>

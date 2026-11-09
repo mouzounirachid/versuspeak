@@ -45,11 +45,11 @@ export function DealsView() {
             <p className="mt-4 leading-relaxed text-stone-300">
               The major retailer events are live: Home Depot&apos;s Black Friday Appliance Event runs Nov 4 – Dec 2,
               Lowe&apos;s runs four straight weeks of deals, Best Buy is up to 50% off select major appliances, and
-              Amazon has already cut flagship TVs up to 52%. The cuts below apply only to products we have tested
+              Amazon has already cut flagship TVs up to 48%. The cuts below apply only to products we have tested
               and recommended — never on junk we would not buy ourselves.
             </p>
             <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-xs font-semibold text-orange-300 ring-1 ring-inset ring-white/15">
-              <ShieldCheck className="h-3.5 w-3.5" aria-hidden /> Prices verified November 7, 2026 · re-checked twice daily
+              <ShieldCheck className="h-3.5 w-3.5" aria-hidden /> Prices verified November 9, 2026 · re-checked twice daily
             </p>
           </div>
           <div className="flex flex-col items-start gap-3">

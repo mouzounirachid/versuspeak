@@ -79,7 +79,7 @@ export function Hero({ onNavigate }: { onNavigate: (v: View) => void }) {
           <div className="flex-1">
             <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-orange-400">Black Friday 2026 · verified pricing live</p>
             <p className="mt-0.5 font-serif text-lg font-bold text-white">
-              {DEALS.length} tested picks already discounted — up to 52% off
+              {DEALS.length} tested picks already discounted — up to 48% off
             </p>
           </div>
           <div className="hidden md:block">
