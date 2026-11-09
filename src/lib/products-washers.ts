@@ -9,7 +9,7 @@ export const washers: Product[] = [
     model: 'WM4000HWA',
     name: 'LG 4.5 cu. ft. TurboWash 360 Front Load',
     badge: { label: 'Top Pick', style: 'top' },
-    price: 1149,
+    price: 648,
     listPrice: 1399,
     overall: 9.3,
     subScores: [
@@ -164,8 +164,8 @@ export const washers: Product[] = [
     model: 'TC5',
     name: 'Speed Queen TC5 Top Load Agitator',
     badge: { label: 'Durability Pick', style: 'premium' },
-    price: 1799,
-    listPrice: 1799,
+    price: 1649,
+    listPrice: 1649,
     overall: 8.5,
     subScores: [
       { label: 'Cleaning performance', score: 9.3 },
@@ -203,8 +203,8 @@ export const washers: Product[] = [
     model: 'MVW6230HW',
     name: 'Maytag 4.8 cu. ft. Top Load with Agitator',
     badge: { label: 'Best Value', style: 'value' },
-    price: 949,
-    listPrice: 1149,
+    price: 839,
+    listPrice: 1049,
     overall: 8.2,
     subScores: [
       { label: 'Cleaning performance', score: 8.4 },

@@ -9,8 +9,8 @@ export const dryers: Product[] = [
     model: 'DLEX4000W',
     name: 'LG 7.4 cu. ft. TurboSteam Electric Dryer',
     badge: { label: 'Top Pick', style: 'top' },
-    price: 1299,
-    listPrice: 1499,
+    price: 725,
+    listPrice: 1299,
     overall: 9.2,
     subScores: [
       { label: 'Drying performance', score: 9.5 },
@@ -164,7 +164,8 @@ export const dryers: Product[] = [
     model: 'DF7',
     name: 'Speed Queen 7.0 cu. ft. Commercial-Grade Electric Dryer',
     badge: { label: 'Durability Pick', style: 'value' },
-    price: 1899,
+    price: 2199,
+    listPrice: 2449,
     overall: 8.5,
     subScores: [
       { label: 'Drying performance', score: 8.6 },
@@ -203,7 +204,8 @@ export const dryers: Product[] = [
     model: 'MED6230HW',
     name: 'Maytag 7.3 cu. ft. Extra Power Electric Dryer',
     badge: { label: 'Best Value', style: 'value' },
-    price: 999,
+    price: 760,
+    listPrice: 1049,
     overall: 8.2,
     subScores: [
       { label: 'Drying performance', score: 8.4 },

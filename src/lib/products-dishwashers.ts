@@ -10,7 +10,7 @@ export const dishwashers: Product[] = [
     name: 'Bosch 800 Series 24" CrystalDry',
     badge: { label: 'Top Pick', style: 'top' },
     price: 1349,
-    listPrice: 1649,
+    listPrice: 1499,
     overall: 9.5,
     subScores: [
       { label: 'Cleaning performance', score: 9.7 },
@@ -49,8 +49,8 @@ export const dishwashers: Product[] = [
     model: 'G 7566 SCVi AutoDos',
     name: 'Miele G 7566 SCVi AutoDos',
     badge: { label: 'Premium Pick', style: 'premium' },
-    price: 2199,
-    listPrice: 2599,
+    price: 2599,
+    listPrice: 2749,
     overall: 9.3,
     subScores: [
       { label: 'Cleaning performance', score: 9.6 },
@@ -126,8 +126,8 @@ export const dishwashers: Product[] = [
     brand: 'KitchenAid',
     model: 'KDTE204KPS',
     name: 'KitchenAid ProWash FreeFlex',
-    price: 1229,
-    listPrice: 1499,
+    price: 1034,
+    listPrice: 1149,
     overall: 8.7,
     subScores: [
       { label: 'Cleaning performance', score: 9.0 },
@@ -203,8 +203,8 @@ export const dishwashers: Product[] = [
     model: 'DW80CG4020SR',
     name: 'Samsung Digital Touch Control 24"',
     badge: { label: 'Best Value', style: 'value' },
-    price: 749,
-    listPrice: 899,
+    price: 399,
+    listPrice: 649,
     overall: 8.0,
     subScores: [
       { label: 'Cleaning performance', score: 8.0 },

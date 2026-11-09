@@ -11,7 +11,7 @@ export const ARTICLES: Article[] = [
     readMinutes: 8,
     image: '/images/articles/lg-vs-samsung-refrigerators.jpg',
     tldr:
-      'Buy the LG LRYXS2706S ($2,899) if reliability, temperature stability, and running cost matter most — it is our 9.4/10 Top Pick. Buy the Samsung RF29BB8900 ($2,799) if the smart features are the point: Family Hub cameras and the boldest design. On the combined lab and reliability evidence, LG is the safer long-term bet; Samsung wins the spec sheet.',
+      'Buy the LG LRYXS2706S ($1,799 Black Friday price at Home Depot, down from $2,899) if reliability, temperature stability, and running cost matter most — it is our 9.4/10 Top Pick. Buy the Samsung RF29BB8900 ($2,749, down from its $4,199 MSRP) if the smart features are the point: Family Hub cameras and the boldest design. On the combined lab and reliability evidence, LG is the safer long-term bet — and this Black Friday, unusually, also the cheaper one.',
     sections: [
       {
         heading: 'The decision, up front',
@@ -20,7 +20,7 @@ export const ARTICLES: Article[] = [
         list: [
           'Buying for 10+ years of ownership, or running an open-plan kitchen: buy the LG LRYXS2706S',
           'Buying because the smart features are the point: buy the Samsung RF29BB8900',
-          'At Black Friday 2026 pricing both land at $1,799–$1,999 — price is no longer the tiebreaker',
+          'At Black Friday 2026 pricing the LG lands at $1,799 and the Samsung Family Hub at $2,749 — price is now the tiebreaker, and it favors LG',
         ],
       },
       {
@@ -46,7 +46,7 @@ export const ARTICLES: Article[] = [
       {
         heading: 'What they cost right now (Black Friday 2026)',
         body:
-          'Street prices converge hard in November: the LG 27 cu. ft. InstaView has been running $1,799 at the Home Depot Appliance Event, and comparable Samsung Bespoke 4-door units hit $1,799–$1,999 across retailers. At parity pricing the value calculus simplifies: you are choosing between LG’s hardware margins and Samsung’s feature stack. Energy running costs favor the LG by roughly $8–12 a year in our metered estimate — small, but it compounds over a 14-year service life. Check today’s verified prices on our deals page before you commit; both models are tracked daily.',
+          'Street prices no longer converge in November: the LG 27 cu. ft. InstaView has been running $1,799 at the Home Depot Appliance Event, while Samsung Bespoke Family Hub units sit near $2,749 — Home Depot’s documented Family Hub cuts run 34–35% off a $4,199 MSRP, not down to LG’s level. At a roughly $950 gap you are choosing between LG’s hardware margins at a discount and a near-thousand-dollar premium for Samsung’s feature stack. Energy running costs favor the LG by roughly $8–12 a year in our metered estimate — small, but it compounds over a 14-year service life. Check today’s verified prices on our deals page before you commit; both models are tracked daily.',
       },
       {
         heading: 'Which one to buy — the final call',
@@ -77,7 +77,7 @@ export const ARTICLES: Article[] = [
     readMinutes: 7,
     image: '/images/articles/best-time-to-buy-appliances.jpg',
     tldr:
-      'Buy now if the model you want is already inside a retailer appliance event at its floor price — Home Depot’s runs Nov 4–Dec 2, Lowe’s and Best Buy are live, and our verified deals page shows tested picks like the Samsung Bespoke at $1,799. Wait for Black Friday week only if you are hunting a mid-range or premium model for flash-round cuts. Never wait for January: post-holiday appliance prices rise 3–6% in our log.',
+      'Buy now if the model you want is already inside a retailer appliance event at its floor price — Home Depot’s runs Nov 4–Dec 2, Lowe’s and Best Buy are live, and our verified deals page shows tested picks like the Samsung Bespoke at $2,749. Wait for Black Friday week only if you are hunting a mid-range or premium model for flash-round cuts. Never wait for January: post-holiday appliance prices rise 3–6% in our log.',
     sections: [
       {
         heading: 'The decision, up front: buy now or wait?',
@@ -93,7 +93,7 @@ export const ARTICLES: Article[] = [
       {
         heading: 'Why late November still wins — for the right models',
         body:
-          'The depth is real: typical Black Friday pricing ran 20–35% off list in our log, and the 2026 pattern is repeating. Our verified deals page already shows tested picks like the Samsung Bespoke refrigerator at $1,799 and our Top Pick LG dryer at $999. But the window has changed shape: retailers now run four-week events (Home Depot’s Black Friday Appliance Event runs November 4 through December 2), so the “deal” is already live — Black Friday itself just adds flash rounds on specific premium SKUs. That is why the timing question is now really a stock question.',
+          'The depth is real: typical Black Friday pricing ran 20–35% off list in our log, and the 2026 pattern is repeating. Our verified deals page already shows tested picks like the Samsung Bespoke refrigerator at $2,749 and our Top Pick LG dryer at $725. But the window has changed shape: retailers now run four-week events (Home Depot’s Black Friday Appliance Event runs November 4 through December 2), so the “deal” is already live — Black Friday itself just adds flash rounds on specific premium SKUs. That is why the timing question is now really a stock question.',
         list: [
           'Week of November 4 (now): retailer events open — bundles and rebates go live first',
           'Black Friday (Nov 27): deepest single-day cuts on mid-range and premium models',
@@ -237,17 +237,17 @@ export const ARTICLES: Article[] = [
     readMinutes: 8,
     image: '/images/articles/oled-vs-qled-2026.jpg',
     tldr:
-      'Buy OLED if you watch in a dark or dim room: the LG C5 OLED evo ($1,299 verified deal, 9.3/10) holds a measured 0.000-nit black floor that no LED-backlit TV can match. Buy QLED/mini-LED if your room fights daylight or your budget is under $1,000: the TCL QM8L ($1,199, 52% off) measured ~2,400 nits — nearly double the LG. Burn-in is a managed risk in 2026, not the dealbreaker it was in 2019, but heavy static-image users should still favor mini-LED. Both technologies now handle 4K/120Hz+ gaming; the real divide is brightness, blacks, and price.',
+      'Buy OLED if you watch in a dark or dim room: the LG C5 OLED evo ($1,399 verified deal, 9.3/10) holds a measured 0.000-nit black floor that no LED-backlit TV can match. Buy QLED/mini-LED if your room fights daylight or your budget is under $1,300: the TCL QM8L ($1,299, 48% off) measured ~2,400 nits — nearly double the LG. Burn-in is a managed risk in 2026, not the dealbreaker it was in 2019, but heavy static-image users should still favor mini-LED. Both technologies now handle 4K/120Hz+ gaming; the real divide is brightness, blacks, and price.',
     sections: [
       {
         heading: 'The decision, up front',
         body:
           'This is a two-question decision, and the showroom hides one of them. Question one: how much light is in your room when you actually watch? Question two: what does your budget really cap at? OLED (the LG C5, the Samsung S95F) wins the dark-room contest outright — our colorimeter measured a 0.000-nit black floor on the C5, which means the pixels turn fully off and the picture floats in true darkness. QLED/mini-LED (the TCL QM8L, the Hisense U8QG) wins the bright-room contest just as decisively — the QM8L peaked at roughly 2,400 measured nits, almost double the LG, with HDR highlight punch that survives a sunny afternoon. Everything else — gaming specs, HDR formats, smart platforms — now overlaps heavily between the two camps. Decide with your room first, your budget second.',
         list: [
-          'Dark or dim room, movies and shows at night: buy the LG C5 OLED evo 65” — $1,299 verified, 9.3/10 Top Pick',
-          'Bright room, daytime sports, blinds open: buy the TCL QM8L QD-Mini LED 65” — $1,199 at 52% off, or the Hisense U8QG at $999',
-          'Premium bright room, design matters: buy the Samsung S95F QD-OLED 65” — glare-free OLED brightness, $2,099',
-          'Under $900: the TCL QM7L ($897) and Roku Pro Series ($849) bring real mini-LED HDR to the budget tier',
+          'Dark or dim room, movies and shows at night: buy the LG C5 OLED evo 65” — $1,399 verified, 9.3/10 Top Pick',
+          'Bright room, daytime sports, blinds open: buy the TCL QM8L QD-Mini LED 65” — $1,299 at 48% off, or the Hisense U8QG at $999',
+          'Premium bright room, design matters: buy the Samsung S95F QD-OLED 65” — glare-free OLED brightness, $2,399',
+          'Under $1,100: the TCL QM7L ($1,090) and Roku Pro Series ($849) bring real mini-LED HDR to the budget tier',
           'Heavy static-image use (news tickers, gaming HUDs all day): favor mini-LED to sidestep burn-in risk entirely',
         ],
       },
@@ -280,17 +280,17 @@ export const ARTICLES: Article[] = [
       {
         heading: 'What the technologies cost in November 2026',
         body:
-          'Black Friday pricing has collapsed the traditional OLED premium. The LG C5 OLED is verified at $1,299 (list $1,699) — early-November street prices bottomed at $1,296, and LG’s Black Friday Price Guarantee on OLED TVs runs through 11/22/26, so a deeper cut before then gets honored. The mini-LED value story is louder still: the TCL QM8L flagship sits at $1,199 — 52% off its $2,499 list — the Hisense U8QG is $999 (its lowest tracked price of the year), and the TCL QM7L undercuts every 65-inch mini-LED rival at $897. Even the premium tier moved: the Samsung S95F hit $2,099 at Best Buy, and a $1,399 Walmart flash on November 2 showed where Black Friday week can take it. The takeaway: at $1,200–$1,300 you now choose technology, not tier — the price gap between the best OLED and the best mini-LED has effectively closed.',
+          'Black Friday pricing has collapsed the traditional OLED premium. The LG C5 OLED is verified at $1,399 at Best Buy (list $1,699) — street prices bottomed at $1,296 in early November and have settled around $1,399, and LG’s Black Friday Price Guarantee on OLED TVs runs through 11/22/26, so a deeper cut before then gets honored. The mini-LED value story is louder still: the TCL QM8L flagship sits at $1,299 — 48% off its $2,499 list — the Hisense U8QG is $999 (its lowest tracked price of the year), and the TCL QM7L undercuts every 65-inch mini-LED rival at $1,090. Even the premium tier moved: the Samsung S95F sits at $2,399 on Amazon, and a $1,399 Walmart flash on November 2 showed where Black Friday week can take it. The takeaway: at $1,300–$1,400 you now choose technology, not tier — the price gap between the best OLED and the best mini-LED has effectively closed.',
       },
       {
         heading: 'Which one to buy — the final call',
         body: 'Our recommendation, based on the full metered picture:',
         list: [
-          'Buy the LG C5 OLED 65” if you watch mostly at night or in a dim room — reference-grade blacks, clean upscaling, four HDMI 2.1 ports, $1,299 verified',
-          'Buy the TCL QM8L 65” if your room is bright or you want maximum HDR pop per dollar — ~2,400 nits measured, 144Hz gaming, $1,199 at 52% off',
+          'Buy the LG C5 OLED 65” if you watch mostly at night or in a dim room — reference-grade blacks, clean upscaling, four HDMI 2.1 ports, $1,399 verified',
+          'Buy the TCL QM8L 65” if your room is bright or you want maximum HDR pop per dollar — ~2,400 nits measured, 144Hz gaming, $1,299 at 48% off',
           'Buy the Hisense U8QG 65” at $999 if brightness, anti-reflection, and budget all matter — the best under-$1,000 TV we tested',
-          'Buy the Samsung S95F 65” only if the premium is the point — glare-free QD-OLED is the best-looking image in the pool at $2,099',
-          'Buy the TCL QM7L ($897) or Roku Pro Series ($849) for bedrooms, offices, and guest rooms — real mini-LED HDR without the flagship bill',
+          'Buy the Samsung S95F 65” only if the premium is the point — glare-free QD-OLED is the best-looking image in the pool at $2,399',
+          'Buy the TCL QM7L ($1,090) or Roku Pro Series ($849) for bedrooms, offices, and guest rooms — real mini-LED HDR without the flagship bill',
           'Whichever you choose, verify today’s price on our deals page before checkout — TV pricing moved weekly all November',
         ],
       },
@@ -312,17 +312,17 @@ export const ARTICLES: Article[] = [
     readMinutes: 8,
     image: '/images/articles/speed-queen-vs-lg.jpg',
     tldr:
-      'Buy the LG pair for most homes: the WM4000HWA washer ($1,149) removed 97% of our test stains, and the DLEX4000W dryer is $999 at Best Buy right now — a pair that is faster, quieter, and dramatically more efficient than Speed Queen. Buy the Speed Queen TC5/DF7 pair ($3,698 as priced today) if 25-year durability outranks speed, capacity, and utility bills: seven-year parts-and-labor coverage on both machines is the longest warranty in the industry, and the drivetrain is the same one Speed Queen sells to laundromats. LG wins performance per dollar; Speed Queen wins the decades.',
+      'Buy the LG pair for most homes: the WM4000HWA washer ($648 at Home Depot’s Black Friday price) removed 97% of our test stains, and the DLEX4000W dryer is $725 right now (LG’s own Black Friday Price) — a $1,373 pair that is faster, quieter, and dramatically more efficient than Speed Queen. Buy the Speed Queen TC5/DF7 pair ($3,848 as priced today) if 25-year durability outranks speed, capacity, and utility bills: seven-year parts-and-labor coverage on both machines is the longest warranty in the industry, and the drivetrain is the same one Speed Queen sells to laundromats. LG wins performance per dollar; Speed Queen wins the decades.',
     sections: [
       {
         heading: 'The decision, up front',
         body:
           'This is not a close matchup on spec sheets: LG wins nearly every performance number we measured, and most by a wide margin. Speed Queen wins exactly two categories — expected lifespan and warranty coverage — and for a specific kind of buyer those two outweigh everything else combined. We ran both brand lineups through the same gauntlet: identical stain strips, identical 9-pound mixed loads, metered water and electric lines, and a teardown table. If you want the shortest, cheapest, quietest laundry day, the answer is LG, and the gap is not subtle. If you want machines your family will still be running in 2050, the answer is Speed Queen, and that gap is not subtle either.',
         list: [
-          'Most households: buy the LG WM4000HWA washer ($1,149) with the DLEX4000W dryer — $999 at Best Buy right now, a live $300 Black Friday cut',
-          'Buy the Speed Queen TC5 ($1,799) if you want a 25-year agitator machine and accept a smaller tub plus higher water and power bills',
-          'Buy the Speed Queen DF7 ($1,899) if you run three-plus loads back to back on Saturdays and want nothing fragile in the room',
-          'Same philosophy on a budget: the Maytag MVW6230HW ($799 deal) and MED6230HW ($999) are the value middle ground',
+          'Most households: buy the LG WM4000HWA washer ($648) with the DLEX4000W dryer — $725 right now, live Black Friday cuts of $501 and $574 off list',
+          'Buy the Speed Queen TC5 ($1,649) if you want a 25-year agitator machine and accept a smaller tub plus higher water and power bills',
+          'Buy the Speed Queen DF7 ($2,199) if you run three-plus loads back to back on Saturdays and want nothing fragile in the room',
+          'Same philosophy on a budget: the Maytag MVW6230HW ($839 closeout) and MED6230HW ($760 closeout) are the value middle ground',
           'The wrong pick is paying Speed Queen money for features it deliberately lacks, or expecting LG electronics to outlive a mechanical drivetrain',
         ],
       },
@@ -364,10 +364,10 @@ export const ARTICLES: Article[] = [
       {
         heading: 'What each pair really costs to own',
         body:
-          'The sticker math first. The LG pair costs $2,148 as priced today — the WM4000HWA at $1,149 and the DLEX4000W at $999 in Best Buy’s Black Friday deal. The Speed Queen pair lists at $3,698, a $1,550 premium — about 72% more — and Speed Queen does not discount: its list prices held flat through the 14 months of price tracking behind our timing guide, while LG laundry pricing moved weekly in November. Then the running math works the same direction: the TC5’s 7.2 efficiency score means more water and electricity per load, and its slower spin feeds wetter clothes to your dryer, so you pay the difference twice. Over ten years the LG pair is convincingly cheaper to own. Speed Queen’s case is the decade after that: if the machines truly run 25 years, buying one pair instead of two is worth roughly what the gap costs — which is exactly the bet you are making.',
+          'The sticker math first. The LG pair costs $1,373 as priced today — the WM4000HWA at $648 in Home Depot’s Black Friday event and the DLEX4000W at $725 in LG’s own Black Friday sale. The Speed Queen pair lists at $3,848, a $2,475 premium — about 180% more — and Speed Queen barely discounts: its list prices held flat through the 14 months of price tracking behind our timing guide (the DF7’s current 10% cut off its $2,449 MSRP is its deepest in years), while LG laundry pricing moved weekly in November. Then the running math works the same direction: the TC5’s 7.2 efficiency score means more water and electricity per load, and its slower spin feeds wetter clothes to your dryer, so you pay the difference twice. Over ten years the LG pair is convincingly cheaper to own. Speed Queen’s case is the decade after that: if the machines truly run 25 years, buying one pair instead of two is worth roughly what the gap costs — which is exactly the bet you are making.',
         list: [
-          'LG pair today: $2,148 ($1,149 washer + $999 dryer deal at Best Buy)',
-          'Speed Queen pair: $3,698 ($1,799 + $1,899), and SQ prices never move',
+          'LG pair today: $1,373 ($648 washer + $725 dryer deal)',
+          'Speed Queen pair: $3,848 ($1,649 + $2,199), and SQ prices barely move',
           'Utilities: the LG’s 9.4 efficiency score vs. 7.2 compounds every single load',
         ],
       },
@@ -375,7 +375,7 @@ export const ARTICLES: Article[] = [
         heading: 'Which pair to buy — the final call',
         body: 'Our recommendation, based on the full metered picture:',
         list: [
-          'Buy the LG WM4000HWA + DLEX4000W pair if you want the fastest, quietest, most efficient laundry room for the money — $2,148 as priced today, with the $999 dryer deal live at Best Buy',
+          'Buy the LG WM4000HWA + DLEX4000W pair if you want the fastest, quietest, most efficient laundry room for the money — $1,373 as priced today, with the $725 dryer deal live right now',
           'Buy the Speed Queen TC5 if you wash small, rugged, frequent loads and want the machine your kids inherit — accept the 3.2-cu.-ft. tub and higher bills',
           'Buy the Speed Queen DF7 if durability outranks features on your list — five cycles, zero fragility, seven years of coverage',
           'A legitimate mixed marriage: the TC5 washer paired with the LG dryer — the agitator scrubs, the LG finishes fast and quiet',
@@ -402,23 +402,23 @@ export const ARTICLES: Article[] = [
     readMinutes: 8,
     image: '/images/articles/bosch-vs-miele-dishwashers.jpg',
     tldr:
-      'Buy the Bosch 800 Series SHP78CM5N for most kitchens: $1,149 at Amazon (down from $1,349), 9.5/10, the quietest machine we measured at 42 dBa, and the only dishwasher whose zeolite CrystalDry made plastic containers come out genuinely dry. The Miele G 7566 SCVi ($1,899 at Best Buy, 9.3/10) is the buy-once option: engineered and endurance-tested for 20 years, with the brilliant AutoDos detergent system and a panel-ready door for custom kitchens — but it costs $750 more plus PowerDisk refills. Want 90% of both for less? The LG QuadWash Pro at $849 is the value challenger.',
+      'Buy the Bosch 800 Series SHP78CM5N for most kitchens: $1,349 (street pricing has settled there across major retailers; Bosch’s own MSRP is $1,499), 9.5/10, the quietest machine we measured at 42 dBa, and the only dishwasher whose zeolite CrystalDry made plastic containers come out genuinely dry. The Miele G 7566 SCVi ($2,599 at Best Buy, 9.3/10) is the buy-once option: engineered and endurance-tested for 20 years, with the brilliant AutoDos detergent system and a panel-ready door for custom kitchens — but it costs $1,250 more plus PowerDisk refills. Want 90% of both for less? The LG QuadWash Pro at $849 is the value challenger.',
     sections: [
       {
         heading: 'The decision, up front',
         body:
-          'Bosch and Miele are the only two brands in our pool that treat the dishwasher as an engineering statement rather than a feature checklist, and both executed beautifully. The Bosch 800 Series wins the measurable day-to-day categories: 42 dBa against the Miele’s 45 — the difference between straining to hear it and simply never noticing it — plus the best third rack we have loaded, and the only drying system that made plastics bone-dry. The Miele wins the long game: it is designed and endurance-tested to 20 years of use, its AutoDos PowerDisk is the most convenient detergent solution we have used, and the panel-ready door disappears completely into custom cabinetry. At today’s deals the gap is $750. Decide with your timeline and your kitchen: Bosch is the best machine for the next decade of dish cycles; Miele is the last dishwasher this house may ever need.',
+          'Bosch and Miele are the only two brands in our pool that treat the dishwasher as an engineering statement rather than a feature checklist, and both executed beautifully. The Bosch 800 Series wins the measurable day-to-day categories: 42 dBa against the Miele’s 45 — the difference between straining to hear it and simply never noticing it — plus the best third rack we have loaded, and the only drying system that made plastics bone-dry. The Miele wins the long game: it is designed and endurance-tested to 20 years of use, its AutoDos PowerDisk is the most convenient detergent solution we have used, and the panel-ready door disappears completely into custom cabinetry. At today’s deals the gap is $1,250. Decide with your timeline and your kitchen: Bosch is the best machine for the next decade of dish cycles; Miele is the last dishwasher this house may ever need.',
         list: [
-          'Most kitchens: Bosch 800 Series SHP78CM5N — $1,149 at Amazon, 9.5/10, our Top Pick',
-          'Custom kitchen, 20-year horizon: Miele G 7566 SCVi — $1,899 at Best Buy, 9.3/10, panel-ready',
+          'Most kitchens: Bosch 800 Series SHP78CM5N — $1,349, 9.5/10, our Top Pick',
+          'Custom kitchen, 20-year horizon: Miele G 7566 SCVi — $2,599 at Best Buy, 9.3/10, panel-ready',
           'Value challenger: LG QuadWash Pro — $849 at Best Buy, 8.9/10, steam pre-wash, 48 dBa',
-          'Rack flexibility rules: KitchenAid ProWash FreeFlex — $1,029, the most adaptable third rack after Bosch’s',
+          'Rack flexibility rules: KitchenAid ProWash FreeFlex — $1,034, the most adaptable third rack after Bosch’s',
         ],
       },
       {
-        heading: 'What the $750 gap actually buys',
+        heading: 'What the $1,250 gap actually buys',
         body:
-          'At today’s verified prices the Bosch costs $1,149 at Amazon (cut from its $1,349 street price for Black Friday) and the Miele costs $1,899 at Best Buy, down from $2,199 — a $750 gap between the two deals. For that money the Miele adds four things: a build standard endurance-tested to 20 years of household use; the AutoDos PowerDisk, which doses detergent automatically for about 20 loads at a time; full panel-ready integration that vanishes behind a custom cabinet door; and sensor wash that measurably adapted water and energy to each load in our metered tests. The Bosch counters with the stronger immediate machine: better drying on the materials people actually complain about, a lower measured noise floor, the best third rack in the test, and a lower everyday price. Nothing about the Miele is a rip-off — every dollar lands somewhere real. It is simply aimed at a kitchen and a horizon most buyers do not have.',
+          'At today’s verified prices the Bosch costs $1,349 (street pricing has settled there at Abt, AJ Madison, and Home Depot; Bosch’s own MSRP is $1,499) and the Miele costs $2,599 at Best Buy, down from its usual $2,749 street band — a $1,250 gap between the two. For that money the Miele adds four things: a build standard endurance-tested to 20 years of household use; the AutoDos PowerDisk, which doses detergent automatically for about 20 loads at a time; full panel-ready integration that vanishes behind a custom cabinet door; and sensor wash that measurably adapted water and energy to each load in our metered tests. The Bosch counters with the stronger immediate machine: better drying on the materials people actually complain about, a lower measured noise floor, the best third rack in the test, and a lower everyday price. Nothing about the Miele is a rip-off — every dollar lands somewhere real. It is simply aimed at a kitchen and a horizon most buyers do not have.',
       },
       {
         heading: 'Cleaning and drying: two different masterpieces',
@@ -449,11 +449,11 @@ export const ARTICLES: Article[] = [
         heading: 'Which one to buy — the final call',
         body: 'Our recommendation, based on the full metered picture:',
         list: [
-          'Buy the Bosch 800 Series SHP78CM5N if you want the best all-around premium dishwasher — 42 dBa, CrystalDry for plastics, the best third rack, $1,149 at Amazon (9.5/10)',
-          'Buy the Miele G 7566 SCVi if a panel-ready door and a 20-year horizon justify the premium — AutoDos is the most convenient detergent system we have used ($1,899 at Best Buy, 9.3/10)',
-          'Buy the LG QuadWash Pro if you want 90% of both for $849 — steam pre-wash, TrueSteam on baked-on sauce, 48 dBa, $300 under the Bosch deal (8.9/10)',
-          'Buy the KitchenAid ProWash FreeFlex ($1,029) if rack reconfiguration matters more than the last decibel',
-          'Under $800, the Samsung DW80CG4020 ($749) cleans like machines twice its price with a 5-year rack-and-tub warranty',
+          'Buy the Bosch 800 Series SHP78CM5N if you want the best all-around premium dishwasher — 42 dBa, CrystalDry for plastics, the best third rack, $1,349 (9.5/10)',
+          'Buy the Miele G 7566 SCVi if a panel-ready door and a 20-year horizon justify the premium — AutoDos is the most convenient detergent system we have used ($2,599 at Best Buy, 9.3/10)',
+          'Buy the LG QuadWash Pro if you want 90% of both for $849 — steam pre-wash, TrueSteam on baked-on sauce, 48 dBa, $500 under the Bosch deal (8.9/10)',
+          'Buy the KitchenAid ProWash FreeFlex ($1,034) if rack reconfiguration matters more than the last decibel',
+          'Under $450, the Samsung DW80CG4020 ($399) cleans like machines twice its price with a 5-year rack-and-tub warranty',
           'Whichever you choose, verify today’s price on our deals page before checkout — premium dishwasher pricing moved weekly all November',
         ],
       },

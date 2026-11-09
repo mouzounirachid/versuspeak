@@ -9,7 +9,7 @@ export const tvs: Product[] = [
     model: 'OLED65C5PUA',
     name: 'LG 65" Class C5 Series OLED evo AI 4K Smart TV',
     badge: { label: 'Top Pick', style: 'top' },
-    price: 1299,
+    price: 1399,
     listPrice: 1699,
     overall: 9.3,
     subScores: [
@@ -31,7 +31,7 @@ export const tvs: Product[] = [
       'Measured a 0.000-nit black floor and reference-grade contrast in our dark-room HDR pass',
       'α9 AI Gen8 upscaling made 1080p cable and 720p streams watchable at 65 inches — best in pool',
       'Sub-14ms measured input lag in game mode with ALLM, VRR, and full 4:4:4 chroma pass',
-      'Early-November street price ($1,296–$1,399) undercuts its own launch MSRP by more than $1,000',
+      'Early-November street price ($1,296–$1,399) sits $300–$400 under its $1,699 list price',
     ],
     cons: [
       'Peak HDR brightness (~1,300 nits measured) trails the mini-LED picks in sunlit rooms',
@@ -50,7 +50,7 @@ export const tvs: Product[] = [
     model: '65QM8L',
     name: 'TCL 65" Class QM8L Series QD-Mini LED 4K Smart Google TV',
     badge: { label: 'Best Value', style: 'value' },
-    price: 1199,
+    price: 1299,
     listPrice: 2499,
     overall: 9.1,
     subScores: [
@@ -72,7 +72,7 @@ export const tvs: Product[] = [
       'Measured ~2,400 nits peak on a 10% window — brightest TV under $2,500 we have tested',
       'Dolby Vision IQ and HDR10+ on one panel — no HDR format left behind',
       'Mini-LED local dimming held deep-black scenes with almost no visible blooming',
-      'At 52% off ($1,199 at press time), flagship brightness at a mid-range price',
+      'At 48% off ($1,299 at press time), flagship brightness at a mid-range price',
     ],
     cons: [
       'Google TV cold-boot took 45+ seconds from power-off on our unit',
@@ -91,7 +91,7 @@ export const tvs: Product[] = [
     model: 'QN65S95F',
     name: 'Samsung 65" Class S95F OLED 4K Glare-Free Smart TV',
     badge: { label: 'Premium Pick', style: 'premium' },
-    price: 2099,
+    price: 2399,
     listPrice: 2999,
     overall: 9.0,
     subScores: [
@@ -255,7 +255,7 @@ export const tvs: Product[] = [
     model: '65QM7L',
     name: 'TCL 65" Class QM7L Series QD-Mini LED 4K Smart Google TV',
     badge: { label: 'Budget Pick', style: 'great' },
-    price: 897,
+    price: 1090,
     listPrice: 1499,
     overall: 8.2,
     subScores: [
@@ -275,9 +275,9 @@ export const tvs: Product[] = [
     ],
     pros: [
       'Measured ~1,800 nits peak — true mini-LED brightness at a big-box clearance price',
-      '144Hz panel with VRR covers console and PC gaming for under $900',
-      'Google TV interface identical to our $1,199 pick — no feature tax at the budget tier',
-      '40% off at press time, the lowest tracked price of the year',
+      '144Hz panel with VRR covers console and PC gaming for under $1,100',
+      'Google TV interface identical to our $1,299 pick — no feature tax at the budget tier',
+      '27% off at press time, within a few dollars of the fall low',
     ],
     cons: [
       'Dimming zones are roughly half the QM8L’s — more visible halos in dark scenes',

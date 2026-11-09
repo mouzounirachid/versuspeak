@@ -49,8 +49,8 @@ export const refrigerators: Product[] = [
     model: 'RF29BB8900',
     name: 'Samsung Bespoke 29 cu. ft. Family Hub',
     badge: { label: 'Best Smart Fridge', style: 'smart' },
-    price: 2799,
-    listPrice: 3399,
+    price: 2749,
+    listPrice: 4199,
     overall: 9.1,
     subScores: [
       { label: 'Temperature control', score: 9.0 },
