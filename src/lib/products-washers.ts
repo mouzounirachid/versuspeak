@@ -40,6 +40,11 @@ export const washers: Product[] = [
       'The WM4000HWA beat every other washer on our standardized stain strips while using less water and electricity per cycle. It is fast, quiet, and priced like a mid-ranger. This is the default recommendation for most American households.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 699 },
+      { retailer: 'bestbuy', price: 678 },
+      { retailer: 'lowes', price: 648 },
+    ],
   },
   {
     id: 'electrolux-elfw7637at',
@@ -79,6 +84,11 @@ export const washers: Product[] = [
       'If you fight grass, wine, and baby-food stains weekly, the Electrolux Perfect Steam is unmatched. Our stain strips came out closest to new on this machine, and the NSF sanitize cycle is the one we trust for towels.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1499 },
+      { retailer: 'lowes', price: 1399 },
+      { retailer: 'homedepot', price: 1449 },
+    ],
   },
   {
     id: 'samsung-wf53bb8900',
@@ -117,6 +127,11 @@ export const washers: Product[] = [
       'Big families should shortlist the Bespoke. Five-plus cubic feet means fewer loads, and the AI wash sensing actually reduced our detergent use without hurting stain scores.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1799 },
+      { retailer: 'bestbuy', price: 1649 },
+      { retailer: 'homedepot', price: 1699 },
+    ],
   },
   {
     id: 'ge-gfw655ssvww',
@@ -155,6 +170,11 @@ export const washers: Product[] = [
       'Front-load mold is the number one complaint we hear, and GE attacks it directly with automatic door venting. Clean scores, smart features, and the best anti-odor design make it an easy recommendation for basements and closets.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1349 },
+      { retailer: 'lowes', price: 1279 },
+      { retailer: 'homedepot', price: 1249 },
+    ],
   },
   {
     id: 'speed-queen-tc5',
@@ -194,6 +214,10 @@ export const washers: Product[] = [
       'The TC5 is the buy-it-for-life machine. Our teardown showed the same stainless drum and transmission design Speed Queen sells to laundromats. You trade efficiency and capacity for a machine your kids will inherit.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1699 },
+      { retailer: 'bestbuy', price: 1649 },
+    ],
   },
   {
     id: 'maytag-mvw6230hw',
@@ -233,6 +257,11 @@ export const washers: Product[] = [
       'For under a grand you get a real agitator, a genuinely large tub, and Maytag commercial-tech motor branding. It is the workhorse value of 2026.',
     reviewedAt: 'October 2026',
     retailers: ['lowes', 'homedepot', 'amazon'],
+    retailerPrices: [
+      { retailer: 'lowes', price: 869 },
+      { retailer: 'homedepot', price: 839 },
+      { retailer: 'amazon', price: 899 },
+    ],
   },
   {
     id: 'whirlpool-wfw6620rw',
@@ -271,6 +300,10 @@ export const washers: Product[] = [
       'Laundry closets are tight, and this is the front loader built for them. Nothing fancy, but our numbers show clean clothes, low bills, and a footprint most flange-to-wall specs cannot match.',
     reviewedAt: 'October 2026',
     retailers: ['lowes', 'amazon'],
+    retailerPrices: [
+      { retailer: 'lowes', price: 999 },
+      { retailer: 'amazon', price: 1049 },
+    ],
   },
   {
     id: 'lg-wt7300cw',
@@ -309,5 +342,10 @@ export const washers: Product[] = [
       'Top-load fans who hate agitators get the best of both worlds here: giant tub, fast cycles, and app control. Muddy soccer kits should still go to an agitator machine.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1249 },
+      { retailer: 'bestbuy', price: 1179 },
+      { retailer: 'lowes', price: 1149 },
+    ],
   },
 ];

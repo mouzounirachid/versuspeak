@@ -201,6 +201,35 @@ export function retailerUrl(r: Retailer, p: Product): string {
   }
 }
 
+export type RetailerPriceView = { retailer: Retailer; price: number; best: boolean };
+
+/**
+ * Retailer prices for the "Compare prices across retailers" strip: only
+ * retailers we actually link (ctaRetailers order), and only when there are
+ * at least two of them — a single price adds nothing to compare.
+ */
+export function retailerPriceViews(p: Product): RetailerPriceView[] {
+  const prices = new Map((p.retailerPrices ?? []).map((rp) => [rp.retailer, rp.price]));
+  const rs = ctaRetailers(p).filter((r) => prices.has(r));
+  if (rs.length < 2) return [];
+  const min = Math.min(...rs.map((r) => prices.get(r)!));
+  return rs.map((r) => ({ retailer: r, price: prices.get(r)!, best: prices.get(r) === min }));
+}
+
+/**
+ * Cheapest price among the retailers we link (null when no prices).
+ * Powers the "Best price" column of the comparison table.
+ */
+export function bestRetailerPrice(p: Product): RetailerPriceView | null {
+  const strip = retailerPriceViews(p);
+  if (strip.length) return strip.find((v) => v.best) ?? null;
+  const prices = new Map((p.retailerPrices ?? []).map((rp) => [rp.retailer, rp.price]));
+  const rs = ctaRetailers(p).filter((r) => prices.has(r));
+  if (!rs.length) return null;
+  const cheapest = rs.reduce((a, b) => (prices.get(b)! < prices.get(a)! ? b : a));
+  return { retailer: cheapest, price: prices.get(cheapest)!, best: true };
+}
+
 export const RETAILER_LABELS: Record<Retailer, string> = {
   amazon: 'Amazon',
   bestbuy: 'Best Buy',

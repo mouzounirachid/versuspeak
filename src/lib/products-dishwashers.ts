@@ -40,6 +40,11 @@ export const dishwashers: Product[] = [
       'The SHP78CM5N is the dishwasher we recommend to friends and family without hesitation. It washed and dried the dirtiest test load we could build, at a volume you have to strain to hear. Nothing else this year matched the full package.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1449 },
+      { retailer: 'bestbuy', price: 1349 },
+      { retailer: 'homedepot', price: 1399 },
+    ],
   },
   {
     id: 'miele-g7566-scvi',
@@ -80,6 +85,10 @@ export const dishwashers: Product[] = [
       'Miele remains the appliance you buy once. In our metered tests it adapted water and energy to every load, and the AutoDos system is the most convenient detergent solution on the market. Panel-ready design targets true custom kitchens.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 2699 },
+      { retailer: 'bestbuy', price: 2599 },
+    ],
   },
   {
     id: 'lg-ldp6810ss',
@@ -118,6 +127,11 @@ export const dishwashers: Product[] = [
       'The QuadWash Pro is the strongest challenger to Bosch this year. Steam pre-wash plus four-spray arms cleaned our baked-on lasagna pan with no pre-rinse, and it usually costs $250 less than the Bosch 800.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1199 },
+      { retailer: 'bestbuy', price: 1099 },
+      { retailer: 'lowes', price: 1129 },
+    ],
   },
   {
     id: 'kitchenaid-kdte204kps',
@@ -156,6 +170,11 @@ export const dishwashers: Product[] = [
       'KitchenAid racks remain the most flexible in the business, and the FreeFlex third rack adapts to odd loads better than any competitor. Cleaning is a tick behind Bosch, but design lovers will find a lot to like.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1099 },
+      { retailer: 'bestbuy', price: 1034 },
+      { retailer: 'homedepot', price: 1069 },
+    ],
   },
   {
     id: 'ge-profile-pdt755syvfs',
@@ -194,6 +213,11 @@ export const dishwashers: Product[] = [
       'If plastics never seem to dry in your current machine, GE Profile fan-assist drying is the fix. Solid cleaning, quiet operation, and the Piranha disposer mean less scraping before loading.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1349 },
+      { retailer: 'lowes', price: 1299 },
+      { retailer: 'homedepot', price: 1339 },
+    ],
   },
   {
     id: 'samsung-dw80cg4020',
@@ -233,6 +257,11 @@ export const dishwashers: Product[] = [
       'The DW80CG4020 is the budget answer to every rental, condo, and first home. It cleans standard loads as well as machines twice its price, and the 5-year tub and rack warranty removes the usual cheap-dishwasher risk.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 449 },
+      { retailer: 'bestbuy', price: 399 },
+      { retailer: 'homedepot', price: 419 },
+    ],
   },
   {
     id: 'frigidaire-gallery-fgid2479sf',
@@ -271,6 +300,11 @@ export const dishwashers: Product[] = [
       'A dependable mid-price workhorse. OrbitClean spraying surprised us by reaching debris our stained test plates parked in corners. Not the quietest or fastest, but honest value.',
     reviewedAt: 'October 2026',
     retailers: ['lowes', 'homedepot', 'amazon'],
+    retailerPrices: [
+      { retailer: 'lowes', price: 999 },
+      { retailer: 'homedepot', price: 1049 },
+      { retailer: 'amazon', price: 1099 },
+    ],
   },
   {
     id: 'whirlpool-wdf520padm',
@@ -309,5 +343,10 @@ export const dishwashers: Product[] = [
       'For landlords, rentals, and tight budgets, the WDF520PADM just works. It will not dry plastics or run quietly, but it cycles reliably and costs less than a phone repair.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 649 },
+      { retailer: 'lowes', price: 679 },
+      { retailer: 'homedepot', price: 699 },
+    ],
   },
 ];

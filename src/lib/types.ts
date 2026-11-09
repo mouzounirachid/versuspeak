@@ -19,6 +19,12 @@ export type Spec = {
 
 export type Retailer = 'amazon' | 'bestbuy' | 'lowes' | 'homedepot';
 
+/** Current regular price observed at one retailer ({@link Product.retailerPrices}). */
+export type RetailerPrice = {
+  retailer: Retailer;
+  price: number;
+};
+
 export type Product = {
   id: string;
   category: CategoryId;
@@ -29,6 +35,13 @@ export type Product = {
   badge?: ProductBadge;
   price: number;
   listPrice?: number;
+  /**
+   * Current regular price per retailer. Invariant maintained by the data:
+   * the cheapest entry always equals {@link Product.price} (the price we
+   * feature), so the "Best price" flag and the header price never disagree.
+   * Black Friday deals live in DEALS and can go below these regular prices.
+   */
+  retailerPrices?: RetailerPrice[];
   overall: number; // 0 - 10
   subScores: SubScore[];
   specs: Spec[];

@@ -1,4 +1,5 @@
 import type { Product } from '@/lib/types';
+import { RETAILER_LABELS, bestRetailerPrice } from '@/lib/links';
 import { AffiliateCta, BadgeChip, ProductThumb, ScoreCircle } from './atoms';
 
 function keySpecLabel(category: string): string {
@@ -22,7 +23,7 @@ export function ComparisonTable({ products, compact = false }: { products: Produ
   const rows = compact ? products.slice(0, 3) : products;
   return (
     <div className="overflow-x-auto rounded-2xl border border-stone-200/80 shadow-sm">
-      <table className="w-full min-w-[720px] border-collapse text-sm">
+      <table className="w-full min-w-[820px] border-collapse text-sm">
         <caption className="sr-only">Product comparison table</caption>
         <thead>
           <tr className="bg-stone-100/80 text-left">
@@ -36,6 +37,9 @@ export function ComparisonTable({ products, compact = false }: { products: Produ
               Price
             </th>
             <th scope="col" className="px-4 py-3.5 text-xs font-bold uppercase tracking-wider text-stone-600">
+              Best price
+            </th>
+            <th scope="col" className="px-4 py-3.5 text-xs font-bold uppercase tracking-wider text-stone-600">
               Score
             </th>
             <th scope="col" className="px-4 py-3.5 text-xs font-bold uppercase tracking-wider text-stone-600">
@@ -47,7 +51,9 @@ export function ComparisonTable({ products, compact = false }: { products: Produ
           </tr>
         </thead>
         <tbody>
-          {rows.map((p) => (
+          {rows.map((p) => {
+            const best = bestRetailerPrice(p);
+            return (
             <tr
               key={p.id}
               className={`border-t border-stone-100 transition-colors ${
@@ -94,6 +100,18 @@ export function ComparisonTable({ products, compact = false }: { products: Produ
                 )}
               </td>
               <td className="px-4 py-4">
+                {best ? (
+                  <div className="leading-tight">
+                    <span className="font-semibold text-green-700">${best.price.toLocaleString('en-US')}</span>
+                    <span className="block text-xs text-stone-500">at {RETAILER_LABELS[best.retailer]}</span>
+                  </div>
+                ) : (
+                  <span className="text-stone-300" aria-hidden>
+                    —
+                  </span>
+                )}
+              </td>
+              <td className="px-4 py-4">
                 <ScoreCircle score={p.overall} />
               </td>
               <td className="px-4 py-4 text-stone-700">
@@ -103,7 +121,8 @@ export function ComparisonTable({ products, compact = false }: { products: Produ
                 <AffiliateCta product={p} compact />
               </td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </div>

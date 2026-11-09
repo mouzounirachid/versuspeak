@@ -40,6 +40,11 @@ export const refrigerators: Product[] = [
       'The LRYXS2706S is the most complete refrigerator we have tested this year. It held the tightest temperature swing in our 72-hour load test, the dual ice maker never clogged, and the door-in-door design cut open-door time in our kitchen trials. If you want one fridge that does everything well, this is it.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 3099 },
+      { retailer: 'bestbuy', price: 2899 },
+      { retailer: 'lowes', price: 2949 },
+    ],
   },
   {
     id: 'samsung-rf29bb8900',
@@ -80,6 +85,11 @@ export const refrigerators: Product[] = [
       'If your kitchen is the center of the house, the Bespoke Family Hub earns its premium. The AI camera food tracking actually worked in daily use, and no other fridge matches its 29 cubic feet. Just measure your run first — this one is deep.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 2949 },
+      { retailer: 'bestbuy', price: 2749 },
+      { retailer: 'homedepot', price: 2849 },
+    ],
   },
   {
     id: 'bosch-b36cl80ens',
@@ -120,6 +130,11 @@ export const refrigerators: Product[] = [
       'The Bosch 800 Series is the fridge you buy for the next 15 years, not the next sale. It was the quietest unit in our lab, fit flush with 36-inch counters, and kept produce fresh longer than anything else we tested. You pay for refinement, not volume.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 3999 },
+      { retailer: 'bestbuy', price: 3749 },
+      { retailer: 'homedepot', price: 3849 },
+    ],
   },
   {
     id: 'ge-profile-pwe23kynfs',
@@ -158,6 +173,11 @@ export const refrigerators: Product[] = [
       'A very balanced pick that misses the top spot only on refinement. The Hands-Free AutoFill pitcher is genuinely useful, and GE sealed-system support is among the best in the industry if something ever fails.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 2899 },
+      { retailer: 'bestbuy', price: 2749 },
+      { retailer: 'homedepot', price: 2799 },
+    ],
   },
   {
     id: 'whirlpool-wrf535swhz',
@@ -197,6 +217,11 @@ export const refrigerators: Product[] = [
       'The WRF535SWHZ proves you can spend under $2,000 and still get a dependable French-door fridge with real capacity. It skips the gadgets to keep the price down, and our temperature data shows it does not skip the basics.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1999 },
+      { retailer: 'lowes', price: 1899 },
+      { retailer: 'homedepot', price: 1949 },
+    ],
   },
   {
     id: 'maytag-mfi2570fez',
@@ -235,6 +260,10 @@ export const refrigerators: Product[] = [
       'Maytag builds this one like a tank, and it recovered fastest in our hot-weather door-open torture test. Buy it if durability ranks above features on your list.',
     reviewedAt: 'October 2026',
     retailers: ['lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'lowes', price: 2199 },
+      { retailer: 'homedepot', price: 2249 },
+    ],
   },
   {
     id: 'frigidaire-grfs2853af',
@@ -273,6 +302,11 @@ export const refrigerators: Product[] = [
       'A capacity champion for large families who shop in bulk. EvenTemp cooling is the real deal in our data, but expect more audible cycling than the premium units here.',
     reviewedAt: 'October 2026',
     retailers: ['lowes', 'homedepot', 'amazon'],
+    retailerPrices: [
+      { retailer: 'lowes', price: 2249 },
+      { retailer: 'homedepot', price: 2349 },
+      { retailer: 'amazon', price: 2399 },
+    ],
   },
   {
     id: 'kenmore-74025',
@@ -311,5 +345,9 @@ export const refrigerators: Product[] = [
       'If budget rules every decision, the Kenmore 74025 gets you through-door ice and a big fridge footprint for the least money here. Accept the shorter warranty and simple cooling spec, and it is an honest deal.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1699 },
+      { retailer: 'lowes', price: 1749 },
+    ],
   },
 ];

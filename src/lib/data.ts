@@ -14,6 +14,7 @@ export const SITE = {
   description:
     'VersusPeak puts refrigerators, washing machines, dryers, dishwashers, and TVs through independent lab tests. See the top picks of 2026 with scores, prices, and buying guides.',
   amazonTag: 'versuspeak-20',
+  priceChecked: 'November 2026',
   updated: 'November 2026',
 };
 

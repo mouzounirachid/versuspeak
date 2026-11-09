@@ -41,6 +41,10 @@ export const tvs: Product[] = [
       'The C5 is the complete TV for most living rooms: reference-grade contrast, clean upscaling, low-lag gaming, and — this fall — an exceptional street price. It beat every OLED rival on the everyday mix of streaming, sports, and console play. Buy it unless your room fights daylight all day.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1449 },
+      { retailer: 'bestbuy', price: 1399 },
+    ],
   },
   {
     id: 'tcl-qm8l-65',
@@ -82,6 +86,10 @@ export const tvs: Product[] = [
       'The QM8L is the brightness-per-dollar champion: HDR punch that embarrasses TVs twice its price, honest 144Hz gaming, and Google TV built in. We measured daylight-survivable highlight output the LG OLED cannot match. If your room is bright or your budget is firm, this is the pick.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1299 },
+      { retailer: 'bestbuy', price: 1349 },
+    ],
   },
   {
     id: 'samsung-s95f-65',
@@ -123,6 +131,10 @@ export const tvs: Product[] = [
       'The S95F is the best-looking TV we tested this year: brightest QD-OLED, the most effective anti-reflection finish, and the widest color at off-angles. It is also the most expensive pick here. If you want the flagship experience for a bright, open living room, nothing beats it — value hunters should step down.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 2399 },
+      { retailer: 'bestbuy', price: 2499 },
+    ],
   },
   {
     id: 'hisense-u8qg-65',
@@ -164,6 +176,10 @@ export const tvs: Product[] = [
       'The U8QG makes bright rooms its whole personality: huge measured highlight output, a genuinely effective anti-reflection layer, and gaming features that punch far above $999. Blacks are a step behind OLED in the dark. For a sunlit family room, this is the smartest money in our ranking.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 999 },
+      { retailer: 'bestbuy', price: 1049 },
+    ],
   },
   {
     id: 'sony-bravia-7-65',
@@ -205,6 +221,10 @@ export const tvs: Product[] = [
       'The Bravia 7 is the pick for PlayStation households and movie purists: best-in-class gaming handshakes, the most natural motion we measured, and Sony upscaling that flatters real-world content. Brightness leaders beat it on raw HDR pop. At $1,598 it is a fair price for the most refined tuning in the pool.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1598 },
+      { retailer: 'bestbuy', price: 1699 },
+    ],
   },
   {
     id: 'samsung-frame-55',
@@ -246,6 +266,10 @@ export const tvs: Product[] = [
       'The Frame is the only TV here you buy for the wall, and the matte QLED panel genuinely delivers — our testers stopped noticing it was a TV within a week. Picture quality is good, not class-leading. Buy it for a visible living space; skip it for a dedicated dark room.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 898 },
+      { retailer: 'bestbuy', price: 949 },
+    ],
   },
   {
     id: 'tcl-qm7l-65',
@@ -287,6 +311,10 @@ export const tvs: Product[] = [
       'The QM7L proves the budget tier finally has real HDR: measured brightness that beats mid-range sets from two years ago, honest gaming specs, and the same smart platform as TCL’s flagship. Halos and stand design are the trade-offs. For a first big TV or a guest room, this is the default answer under $900.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1090 },
+      { retailer: 'bestbuy', price: 1149 },
+    ],
   },
   {
     id: 'roku-pro-65',
@@ -328,5 +356,9 @@ export const tvs: Product[] = [
       'The Pro Series is the TV for people who just want it to work: Roku’s clean interface, a genuinely good mini-LED image for $849, and no setup fights. Enthusiasts will notice the softer upscaling and the single full-bandwidth gaming port. For bedrooms, offices, and guest spaces, it is the frictionless choice.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 849 },
+      { retailer: 'bestbuy', price: 899 },
+    ],
   },
 ];

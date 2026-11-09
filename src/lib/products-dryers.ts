@@ -40,6 +40,12 @@ export const dryers: Product[] = [
       'The DLEX4000W pairs with our top washer pick and beat every rival on dry-time accuracy: cycles ended when clothes were dry, not when a timer ran out. It is fast, quiet, and forgiving of long vent runs. This is the default electric dryer for most American homes.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 799 },
+      { retailer: 'bestbuy', price: 725 },
+      { retailer: 'lowes', price: 749 },
+      { retailer: 'homedepot', price: 769 },
+    ],
   },
   {
     id: 'electrolux-elfe7637at',
@@ -79,6 +85,11 @@ export const dryers: Product[] = [
       'If your laundry includes delicates, bedding, or bulky comforters, the ELFE7637AT is worth its premium. Its huge drum and steam-first design produced the fewest wrinkles and the most even dry of anything we ran. It is the best match for our Electrolux washer pick.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1599 },
+      { retailer: 'bestbuy', price: 1499 },
+      { retailer: 'lowes', price: 1549 },
+    ],
   },
   {
     id: 'samsung-dve53bb8900',
@@ -117,6 +128,11 @@ export const dryers: Product[] = [
       'The Bespoke dryer is the feature leader: fastest express cycle, smartest automation, best app. It matched the LG on daily drying and costs more for the privilege. Buy it if you want the most connected laundry room; skip the premium if you just want dry laundry.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1649 },
+      { retailer: 'bestbuy', price: 1549 },
+      { retailer: 'lowes', price: 1599 },
+    ],
   },
   {
     id: 'ge-gfd65essvww',
@@ -155,6 +171,12 @@ export const dryers: Product[] = [
       'The GFD65 delivers the sanitize performance families need and dries heavy towels in a single cycle, at a price that undercuts the feature leaders. It is the sensible middle of this ranking — and the best pairing for our GE UltraFresh washer pick.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1299 },
+      { retailer: 'bestbuy', price: 1229 },
+      { retailer: 'lowes', price: 1249 },
+      { retailer: 'homedepot', price: 1199 },
+    ],
   },
   {
     id: 'speed-queen-df7',
@@ -195,6 +217,10 @@ export const dryers: Product[] = [
       'The DF7 is built like a laundromat machine for a house: nothing here is fancy, and nothing here is fragile. If your priority is owning one dryer for the next two decades, Speed Queen remains the category benchmark. Everyone else gets more features for less elsewhere.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 2299 },
+      { retailer: 'bestbuy', price: 2199 },
+    ],
   },
   {
     id: 'maytag-med6230hw',
@@ -235,6 +261,12 @@ export const dryers: Product[] = [
       'The MED6230HW does the one job that matters — ending cycles at real dryness — for about $300 less than the leaders. Extra Power is a simple, honest fix for mixed loads. This is our value recommendation for family laundry rooms.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 829 },
+      { retailer: 'bestbuy', price: 760 },
+      { retailer: 'lowes', price: 789 },
+      { retailer: 'homedepot', price: 799 },
+    ],
   },
   {
     id: 'whirlpool-wed6620rw',
@@ -273,6 +305,11 @@ export const dryers: Product[] = [
       'The WED6620RW is a solid, no-surprises dryer whose flush-fit body solves a real installation problem. Drying results were good, not class-leading. Pick it when cabinet depth drives the purchase — otherwise the Maytag below $1,000 does more for less.',
     reviewedAt: 'October 2026',
     retailers: ['amazon', 'bestbuy', 'lowes'],
+    retailerPrices: [
+      { retailer: 'amazon', price: 1199 },
+      { retailer: 'bestbuy', price: 1099 },
+      { retailer: 'lowes', price: 1129 },
+    ],
   },
   {
     id: 'amana-ned4655ew',
@@ -313,5 +350,9 @@ export const dryers: Product[] = [
       'The NED4655EW is the dryer we recommend when budget rules: it dries cottons reliably with almost nothing to break. You give up steam, sensors-forward features, and speed. For a rental, a first apartment, or a backup unit, it is the honest cheap option.',
     reviewedAt: 'October 2026',
     retailers: ['lowes', 'homedepot'],
+    retailerPrices: [
+      { retailer: 'lowes', price: 699 },
+      { retailer: 'homedepot', price: 729 },
+    ],
   },
 ];
