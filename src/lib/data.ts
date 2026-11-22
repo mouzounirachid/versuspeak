@@ -1,5 +1,5 @@
 import type { Category, Product, Source } from './types';
-export const SITE = { name: 'VersusPeak', domain: 'https://versuspeak.com', description: 'Source-linked appliance and TV buying guides. Manufacturer specifications, practical trade-offs and transparent limits, with transparent sources and evidence limits.', updated: 'November 22, 2026' };
+export const SITE = { name: 'VersusPeak', operator: 'Rachid Mouzouni', domain: 'https://versuspeak.com', description: 'Source-linked appliance and TV buying guides. Manufacturer specifications, practical trade-offs and transparent limits, with transparent sources and evidence limits.', updated: 'November 22, 2026' };
 export const SOURCES: Source[] = [
  { id: 'energy-fridge', title: 'Refrigerator buying guidance', publisher: 'ENERGY STAR', url: 'https://www.energystar.gov/products/refrigerators', kind: 'Government guidance', note: 'Sizing, configuration and energy-use considerations. Not a VersusPeak product test.' },
  { id: 'energy-washer', title: 'Clothes washer buying guidance', publisher: 'ENERGY STAR', url: 'https://www.energystar.gov/products/clothes_washers', kind: 'Government guidance', note: 'EnergyGuide, capacity, front-load designs and efficiency metrics.' },

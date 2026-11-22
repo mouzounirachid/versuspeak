@@ -9,7 +9,7 @@ Branche locale : `improvements/adsense-review`.
 
 ## Corrections editoriales
 
-L'utilisateur a confirme que les essais en laboratoire n'avaient pas eu lieu, que son inscription Amazon n'etait pas terminee et que contact@versuspeak.com etait son adresse publique.
+L'utilisateur a confirme que les essais en laboratoire n'avaient pas eu lieu, que son inscription Amazon n'etait pas terminee et que contact@versuspeak.com etait son adresse publique. Il a ensuite choisi son vrai nom : Rachid Mouzouni est desormais indique comme exploitant, editeur et auteur, sans biographie ni qualification inventee.
 
 - Plus de laboratoire, appareils achetes pour essais, 400+ heures, journal de temperature, mesures de bruit, tests de lavage ou essais de fiabilite attribues a VersusPeak.
 - Plus de byline "VersusPeak Lab", de notes sur 10, de sous-notes inventees, de classements de performance ni de gagnants issus de faux tests.
@@ -46,7 +46,7 @@ La pub display reste prevue comme premiere source de revenus, mais aucune regie 
 
 ## Informations ou controles encore necessaires
 
-1. Identite de l'exploitant/auteur a confirmer par l'utilisateur. La marque VersusPeak est utilisee comme byline provisoire, sans inventer une equipe ni une identite legale.
+1. Nom confirme : Rachid Mouzouni, exploitant, editeur et auteur. Aucune societe, adresse physique, biographie, qualification ni expertise professionnelle n'a ete inventee. Les autres informations legalement requises restent a verifier selon les services et pays vises.
 2. Identifiants GTM et GA4 reels. La reception reelle des evenements, les choix de consentement et les rapports GA4 ne sont pas encore testes.
 3. Completer et faire relire Privacy/Terms selon l'exploitant, les vrais prestataires, traitements, durees de conservation et pays vises. Ces pages sont encore marquees comme brouillons.
 4. Configurer une plateforme de consentement adaptee avant les services qui l'exigent. Consent Mode ne remplace pas une CMP ni un bandeau fonctionnel. Verifier les exigences de certification applicables avant Google ads dans les zones concernees.

@@ -126,6 +126,11 @@ INITIAL HTML: [
     "canonical": "https://versuspeak.com/articles/bosch-vs-miele-dishwashers"
   }
 ]
+confirmed operator/author /about true
+confirmed operator/author /contact true
+confirmed operator/author /privacy true
+confirmed operator/author /terms true
+confirmed operator/author /articles/speed-queen-vs-lg true
 Inactive/invalid route /unknown-page 404
 Inactive/invalid route /articles/unknown-guide 404
 Inactive/invalid route /go/lg-c5-oled-65/amazon 404
