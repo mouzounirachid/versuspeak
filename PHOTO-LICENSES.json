@@ -1,0 +1,62 @@
+[
+  {
+    "file": "public/images/editorial/refrigerator.webp",
+    "source": "https://www.pexels.com/photo/white-refrigerator-in-the-kitchen-9551373/",
+    "download_url": "https://images.pexels.com/photos/9551373/pexels-photo-9551373.jpeg?auto=compress&w=1260&h=750&dpr=1",
+    "author": "Алексей Вечерин",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "verified_on": "2026-11-22",
+    "changes": "Resized, converted to WebP, metadata removed; cropped by layout.",
+    "sha256": "6e4250ef7bc0391ff9d49e6742cd7af05e49e267f8f1989a29b1bf800509e4b5",
+    "use": "Illustrative category photograph, never an exact-model or hands-on-test claim."
+  },
+  {
+    "file": "public/images/editorial/laundry.webp",
+    "source": "https://www.pexels.com/photo/washing-machine-with-clothes-inside-8774444/",
+    "download_url": "https://images.pexels.com/photos/8774444/pexels-photo-8774444.jpeg?auto=compress&w=1260&h=750&dpr=1",
+    "author": "Tima Miroshnichenko",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "verified_on": "2026-11-22",
+    "changes": "Resized, converted to WebP, metadata removed; cropped by layout.",
+    "sha256": "c3a3e62efd206612eff5bbc602abea54b5f2aa1ab586ad011e42363ba9af250f",
+    "use": "Illustrative category photograph, never an exact-model or hands-on-test claim."
+  },
+  {
+    "file": "public/images/editorial/dishwasher.webp",
+    "source": "https://www.pexels.com/photo/empty-rack-of-dishwasher-3829560/",
+    "download_url": "https://images.pexels.com/photos/3829560/pexels-photo-3829560.jpeg?auto=compress&w=1260&h=750&dpr=1",
+    "author": "Castorly Stock",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "verified_on": "2026-11-22",
+    "changes": "Resized, converted to WebP, metadata removed; cropped by layout.",
+    "sha256": "0e8bf941cc1ed245272162b6c0a89450be20106a402a6fb234333810914dd8f2",
+    "use": "Illustrative category photograph, never an exact-model or hands-on-test claim."
+  },
+  {
+    "file": "public/images/editorial/television.webp",
+    "source": "https://www.pexels.com/photo/television-mounted-on-white-wall-7587781/",
+    "download_url": "https://images.pexels.com/photos/7587781/pexels-photo-7587781.jpeg?auto=compress&w=1260&h=750&dpr=1",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "verified_on": "2026-11-22",
+    "changes": "Resized, converted to WebP, metadata removed; cropped by layout.",
+    "sha256": "05afbf3a978248df0818475497961ac684327350b32e0c7f464f3d06a4e365e3",
+    "use": "Illustrative category photograph, never an exact-model or hands-on-test claim."
+  },
+  {
+    "file": "public/images/editorial/kitchen.webp",
+    "source": "https://www.pexels.com/photo/modern-kitchen-interior-with-laundry-area-35996724/",
+    "download_url": "https://images.pexels.com/photos/35996724/pexels-photo-35996724/free-photo-of-modern-kitchen-interior-with-laundry-area.jpeg?auto=compress&w=1260&h=750&dpr=1",
+    "author": "Alexander F Ungerer",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "verified_on": "2026-11-22",
+    "changes": "Resized, converted to WebP, metadata removed; cropped by layout.",
+    "sha256": "54ba4f5b7a30c4fae201744ced804ba16ee1bc67cfdaf3741bb88fc352368572",
+    "use": "Illustrative category photograph, never an exact-model or hands-on-test claim."
+  }
+]
