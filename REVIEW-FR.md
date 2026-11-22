@@ -39,7 +39,7 @@ La pub display reste prevue comme premiere source de revenus, mais aucune regie 
 - Contenu editorial genere cote serveur au build (SSG), disponible dans le HTML initial et lisible sans JavaScript. Pas besoin d'un rendu serveur a chaque visite pour resoudre l'ancien routeur hash.
 - Navigation principale et pied de page explorables, migration des anciens liens hash, erreurs 404 reelles.
 - Metadonnees et URL canonique par page, sitemap genere, robots.txt adapte.
-- GTM prepare mais inactif sans l'identifiant reel. Quatre signaux Consent Mode en denied avant le chargement. GA4 doit etre configure dans GTM, sans deuxieme chargement dans le code.
+- GTM-P44DRGH4 confirme dans la capture et integre via GoogleTagManager de @next/third-parties/google. Le chargement reste explicitement desactive avec NEXT_PUBLIC_GTM_ENABLED=false. Quatre signaux Consent Mode en denied avant tout chargement futur. GA4 doit etre configure dans GTM, sans deuxieme chargement dans le code.
 - Suppression de l'ancien JSON-LD affirmant des avis, prix ou disponibilites non verifies.
 - TypeScript non masque, ESLint propre, demarrage Node.js, package-lock.json pour des installations npm reproductibles.
 - Anciens scripts reinjectant des prix et scores supprimes; un controle de contenu est fourni dans scripts/audit-content.mjs.
@@ -47,7 +47,7 @@ La pub display reste prevue comme premiere source de revenus, mais aucune regie 
 ## Informations ou controles encore necessaires
 
 1. Nom confirme : Rachid Mouzouni, exploitant, editeur et auteur. Aucune societe, adresse physique, biographie, qualification ni expertise professionnelle n'a ete inventee. Les autres informations legalement requises restent a verifier selon les services et pays vises.
-2. Identifiants GTM et GA4 reels. La reception reelle des evenements, les choix de consentement et les rapports GA4 ne sont pas encore testes.
+2. GTM confirme : GTM-P44DRGH4. Identifiant GA4 G-... encore attendu. La reception reelle des evenements, les choix de consentement et les rapports GA4 ne sont pas encore testes. Voir GTM-GA4-FR.md pour les etapes du tableau de bord et de publication.
 3. Completer et faire relire Privacy/Terms selon l'exploitant, les vrais prestataires, traitements, durees de conservation et pays vises. Ces pages sont encore marquees comme brouillons.
 4. Configurer une plateforme de consentement adaptee avant les services qui l'exigent. Consent Mode ne remplace pas une CMP ni un bandeau fonctionnel. Verifier les exigences de certification applicables avant Google ads dans les zones concernees.
 5. Faire approuver le site par la regie choisie, puis ajouter sa propre ligne ads.txt et les identifiants exacts. Cette revision ne garantit pas une approbation AdSense.
@@ -73,7 +73,8 @@ Aucune migration ou reinitialisation de base de donnees n'est necessaire pour ce
 
 Variables :
 
-- `NEXT_PUBLIC_GTM_ID` : vide jusqu'a reception du propre conteneur.
+- `NEXT_PUBLIC_GTM_ID=GTM-P44DRGH4` : conteneur confirme, egalement utilise par defaut dans le code.
+- `NEXT_PUBLIC_GTM_ENABLED=false` : empeche tout chargement distant de GTM, meme avec un identifiant connu. Ne passer a true qu'apres configuration et controle du consentement, avec reconstruction et essai sur une preproduction.
 - `NEXT_PUBLIC_ENABLE_AD_SLOTS=false` : la valeur true ne fait qu'afficher une zone reservee, elle n'installe pas AdSense.
 - `NEXT_PUBLIC_CONTACT_EMAIL=contact@versuspeak.com` : adresse confirmee. La page l'utilise aussi comme valeur de secours.
 
@@ -81,7 +82,7 @@ Les valeurs NEXT_PUBLIC_ sont visibles par les visiteurs. Ne jamais y mettre de 
 
 ## Verification de cette revision
 
-Build, TypeScript et ESLint reussis. Les 21 URL du sitemap repondent 200 avec H1 et canonique dans le HTML initial. Les pages inconnues et anciennes destinations affiliees inactives renvoient 404. Navigation mobile, migration hash et choix du comparateur verifies. Article et ses liens de sources lisibles sans JavaScript. Aucun appel a l'achat affilie ni script GTM actif dans la configuration par defaut. Mailto du contact confirme. Aucun message d'erreur JavaScript observe pendant ces controles. Captures desktop/mobile inspectees, sans debordement horizontal dans les vues controlees.
+Build, TypeScript et ESLint reussis. Les 21 URL du sitemap repondent 200 avec H1 et canonique dans le HTML initial. Les pages inconnues et anciennes destinations affiliees inactives renvoient 404. Navigation mobile, migration hash et choix du comparateur verifies. Article et ses liens de sources lisibles sans JavaScript. Aucun appel a l'achat affilie ni script GTM actif dans la configuration par defaut. Le consentement local est initialise en denied. L'integration GTM ne remplace ni la CMP ni le consentement du visiteur. Mailto du contact confirme. Aucun message d'erreur JavaScript observe pendant ces controles. Captures desktop/mobile inspectees, sans debordement horizontal dans les vues controlees.
 
 Details : REVIEW-TESTS.txt. Un controle automatise de motifs anciens ne constitue pas une certification factuelle ou juridique.
 

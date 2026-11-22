@@ -1,0 +1,20 @@
+# Tracking integration checks
+
+The enabled check intercepted and replaced the GTM response locally. No live container, Analytics event or consent-platform integration was exercised. The delivered source remains disabled by default.
+
+## gtm-enabled-offline-test.txt
+
+mode enabled offline fixture
+local consent defaults [["consent","default",{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","wait_for_update":500}]]
+intercepted remote requests [{"url":"https://www.googletagmanager.com/gtm.js?id=GTM-P44DRGH4","consentBeforeRequest":[["consent","default",{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","wait_for_update":500}]]}]
+JS errors []
+PASS: feature gate, known container ID and consent-default ordering. This does not test a CMP, a live container or GA4 delivery.
+
+## gtm-disabled-test.txt
+
+mode default disabled
+local consent defaults [["consent","default",{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","wait_for_update":500}]]
+intercepted remote requests []
+JS errors []
+PASS: feature gate, known container ID and consent-default ordering. This does not test a CMP, a live container or GA4 delivery.
+
