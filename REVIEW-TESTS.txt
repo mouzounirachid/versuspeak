@@ -1,56 +1,56 @@
-HTML ROUTES [
+INITIAL HTML: [
   {
     "path": "/",
     "status": 200,
-    "h1": "The Best Appliances &amp; TVs, Tested and Ranked.",
+    "h1": "Choose with facts.Compare with clarity.",
     "canonical": "https://versuspeak.com"
   },
   {
     "path": "/refrigerators",
     "status": 200,
-    "h1": "The Best Refrigerators of 2026, Lab-Tested and Ranked",
+    "h1": "Refrigerator buying guide",
     "canonical": "https://versuspeak.com/refrigerators"
   },
   {
     "path": "/washers",
     "status": 200,
-    "h1": "The Best Washing Machines of 2026, Lab-Tested and Ranked",
+    "h1": "Washing machine buying guide",
     "canonical": "https://versuspeak.com/washers"
   },
   {
     "path": "/dryers",
     "status": 200,
-    "h1": "The Best Electric Dryers of 2026, Lab-Tested and Ranked",
+    "h1": "Dryer buying guide",
     "canonical": "https://versuspeak.com/dryers"
   },
   {
     "path": "/dishwashers",
     "status": 200,
-    "h1": "The Best Dishwashers of 2026, Lab-Tested and Ranked",
+    "h1": "Dishwasher buying guide",
     "canonical": "https://versuspeak.com/dishwashers"
   },
   {
     "path": "/tvs",
     "status": 200,
-    "h1": "The Best TVs of 2026, Lab-Tested and Ranked",
+    "h1": "TV buying guide",
     "canonical": "https://versuspeak.com/tvs"
   },
   {
     "path": "/articles",
     "status": 200,
-    "h1": "Beyond the Rankings",
+    "h1": "Appliance &amp; TV decision guides",
     "canonical": "https://versuspeak.com/articles"
   },
   {
     "path": "/compare",
     "status": 200,
-    "h1": "Compare All 40 Tested Models",
+    "h1": "Compare documented design choices",
     "canonical": "https://versuspeak.com/compare"
   },
   {
     "path": "/deals",
     "status": 200,
-    "h1": "Black Friday Deals Worth Buying",
+    "h1": "Check the offer, not the countdown",
     "canonical": "https://versuspeak.com/deals"
   },
   {
@@ -80,69 +80,66 @@ HTML ROUTES [
   {
     "path": "/disclosure",
     "status": 200,
-    "h1": "Affiliate Disclosure",
+    "h1": "Advertising &amp; Affiliate Status",
     "canonical": "https://versuspeak.com/disclosure"
   },
   {
     "path": "/methodology",
     "status": 200,
-    "h1": "How VersusPeak Tests Appliances",
+    "h1": "How VersusPeak researches a comparison",
     "canonical": "https://versuspeak.com/methodology"
   },
   {
     "path": "/articles/lg-vs-samsung-refrigerators",
     "status": 200,
-    "h1": "LG vs. Samsung Refrigerators: Which Brand Should You Buy in 2026?",
+    "h1": "LG vs. Samsung refrigerators: compare the exact models, not the badge",
     "canonical": "https://versuspeak.com/articles/lg-vs-samsung-refrigerators"
   },
   {
     "path": "/articles/best-time-to-buy-appliances",
     "status": 200,
-    "h1": "Buy Appliances Now or Wait for Black Friday 2026? We Checked 14 Months of Price Data",
+    "h1": "Buy now or wait for a sale? Compare the complete appliance cost",
     "canonical": "https://versuspeak.com/articles/best-time-to-buy-appliances"
   },
   {
     "path": "/articles/appliance-reliability-report-2026",
     "status": 200,
-    "h1": "The Most Reliable Refrigerators, Washers &amp; Dishwashers of 2026 — and the Ones to Skip",
+    "h1": "How to read appliance reliability reports without overclaiming",
     "canonical": "https://versuspeak.com/articles/appliance-reliability-report-2026"
   },
   {
     "path": "/articles/oled-vs-qled-2026",
     "status": 200,
-    "h1": "OLED vs. QLED in 2026: Which TV Technology Should You Actually Buy?",
+    "h1": "OLED vs. QLED: start with the panel, then check the exact TV",
     "canonical": "https://versuspeak.com/articles/oled-vs-qled-2026"
   },
   {
     "path": "/articles/speed-queen-vs-lg",
     "status": 200,
-    "h1": "Speed Queen vs. LG: Which Laundry Brand Should You Buy in 2026?",
+    "h1": "Speed Queen TC5003WN vs. LG WM4000HWA: two different washer designs",
     "canonical": "https://versuspeak.com/articles/speed-queen-vs-lg"
   },
   {
     "path": "/articles/bosch-vs-miele-dishwashers",
     "status": 200,
-    "h1": "Bosch vs. Miele: Which Premium Dishwasher Is Worth It in 2026?",
+    "h1": "Bosch SHP78CM5N vs. Miele G 7566: compare features and specifications",
     "canonical": "https://versuspeak.com/articles/bosch-vs-miele-dishwashers"
   }
 ]
-404 test /unknown-page 404
-404 test /articles/unknown-guide 404
-404 test /go/unknown/amazon 404
-404 test /go/lg-c5-oled-65/evil 404
+Inactive/invalid route /unknown-page 404
+Inactive/invalid route /articles/unknown-guide 404
+Inactive/invalid route /go/lg-c5-oled-65/amazon 404
+Inactive/invalid route /go/unknown/evil 404
 desktop overflow false
-hash hrefs 0
-legacy hash migrated http://127.0.0.1:3100/articles/lg-vs-samsung-refrigerators
+affiliate CTA links 0
+active tracking script tags 0
+article sources 3
+comparator result [ 'Bosch SHP78CM5N', 'Miele G 7566 SCVi XXL SF AutoDos' ]
+legacy hash migration http://127.0.0.1:3100/articles/lg-vs-samsung-refrigerators
 mobile overflow false
-mobile navigation http://127.0.0.1:3100/articles
-outbound event [
-  {
-    event: 'affiliate_click',
-    product_id: 'lg-c5-oled-65',
-    retailer: 'amazon',
-    outbound_url: 'https://www.amazon.com/dp/B0DYQM4BDB'
-  }
-]
-outbound destination https://www.amazon.com/dp/B0DYQM4BDB
+mobile menu navigation http://127.0.0.1:3100/articles
+contact mailbox mailto:contact@versuspeak.com
 page errors []
-no JS article visible LG vs. Samsung Refrigerators: Which Brand Should You Buy in 2026?
+no-JS H1 Speed Queen TC5003WN vs. LG WM4000HWA: two different washer designs
+no-JS sources 3
+PASS: 21 initial HTML routes, no old claim patterns, inactive affiliate routes, navigation, comparison selection, mailbox, no-JS article and source links.

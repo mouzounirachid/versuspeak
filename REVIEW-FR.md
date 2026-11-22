@@ -1,90 +1,99 @@
-# VersusPeak, copie technique a relire
+# VersusPeak, revision editoriale et technique
 
-## Statut
+## Statut de cette copie
 
-Cette copie n'a pas ete deployee et ne modifie pas le depot distant. Ce n'est pas une garantie d'acceptation AdSense. Les pages Privacy/Terms/Contact sont des brouillons explicites. Ne pas remplacer le site en production avant d'avoir termine la liste ci-dessous.
+Copie de travail a relire. Aucun changement du depot distant, aucune mise en ligne et aucune demande AdSense n'ont ete effectues. Cette revision remplace la premiere copie technique, qui conservait encore les anciens contenus non verifies.
 
-Point de depart sauvegarde : `0cddbda249166fdafec295554d758151d63f6d9e`.
-Branche de travail locale : `improvements/adsense-review`.
+Sauvegarde intacte du point de depart : `0cddbda249166fdafec295554d758151d63f6d9e`.
+Branche locale : `improvements/adsense-review`.
 
-## Changements techniques
+## Corrections editoriales
 
-- URLs Next.js reelles pour les cinq categories, les six guides et les pages de confiance. Le contenu est present dans le HTML initial, meme sans JavaScript. Les pages editoriales sont pregenerees cote serveur (SSG), sans imposer un rendu serveur a chaque visite.
-- Titres, descriptions et URL canonique propres a chaque page. Sitemap genere a partir des memes donnees, robots.txt adapte. Les URL inconnues renvoient 404.
-- Anciens liens `#articles/...` et `#refrigerators` repris par une migration cote navigateur. Les nouveaux liens du site utilisent des chemins normaux.
-- Navigation principale et pied de page sous forme de liens explorables. Presentation existante conservee.
-- Pages About/Contact/Privacy/Terms/Disclosure accessibles directement. Aucun email invente n'est active.
-- Suppression du balisage JSON-LD global qui affirmait des avis, des prix et une disponibilite en stock sans preuve actualisee.
-- Liens sortants via `/go/identifiant-produit/enseigne`. Seuls les produits et enseignes connus sont acceptes, pas de parametre URL permettant une redirection libre.
-- Evenement dataLayer `affiliate_click` avec `product_id`, `retailer`, `outbound_url`; delai de secours de 1,2 seconde et lien manuel sans JavaScript. Le clic est mesure avant la redirection, mais la reception dans GA4 reste a verifier apres configuration reelle.
-- GTM prepare par variable d'environnement, aucun identifiant invente. Les quatre signaux de Consent Mode demarrent en `denied`. GA4 doit etre installe dans GTM, pas charge deux fois.
-- Zone publicitaire reservee en fin des pages editoriales, desactivee par defaut. Aucune annonce active. ads.txt contient seulement des commentaires, sans faux compte editeur.
-- Ancien identifiant Amazon sorti du code de redirection actif. Les liens Amazon restent sans tag tant qu'un identifiant approuve n'est pas configure.
-- Verification TypeScript reactivee; petites corrections des effets React et du nettoyage du carrousel. Commande de production compatible Node.js.
+L'utilisateur a confirme que les essais en laboratoire n'avaient pas eu lieu, que son inscription Amazon n'etait pas terminee et que contact@versuspeak.com etait son adresse publique.
 
-## A confirmer avant publication
+- Plus de laboratoire, appareils achetes pour essais, 400+ heures, journal de temperature, mesures de bruit, tests de lavage ou essais de fiabilite attribues a VersusPeak.
+- Plus de byline "VersusPeak Lab", de notes sur 10, de sous-notes inventees, de classements de performance ni de gagnants issus de faux tests.
+- Plus de prix en direct, prix verifies, historique de quatorze mois, reductions Black Friday ou compte a rebours presentant des offres non verifiees.
+- Les cinq categories et six guides sont reecrits comme des comparaisons de specifications, des listes de verification et une lecture critique des sources.
+- Les 40 anciennes fiches non verifiees ne sont pas presentees comme un travail de recherche. Elles ont ete retirees au profit de six exemples limites, documentes par leurs fabricants, sans prix ni note de performance.
+- Le modele LG de refrigerateur est maintenant le LRSXS2706S, reellement documente comme un side-by-side de 27 cu. ft. Il n'est pas confondu avec l'ancien identifiant proche non verifie.
+- Le televiseur LG C5 est correctement decrit comme un modele 2025, sans le rebaptiser nouveaute 2026.
+- Les specifications LG WM4000HWA / Speed Queen TC5003WN et Bosch SHP78CM5N / Miele G 7566 sont attribuees aux fabricants. Les differents chiffres de bruit sont cites avec leur unite et ne sont pas presentes comme un test controle commun.
+- Les limites du rapport de service Yale sont explicites : premiere annee, marques vendues/entretenues et zone regionale. Aucun taux national, duree de vie ou score par modele n'en est deduit.
+- Aucune analyse d'avis proprietaires ni agregation de notes n'est revendiquee sans jeu de donnees reel.
+- Les liens de sources sont visibles en bas des guides, avec leur editeur, leur type et leur limite. Voir EDITORIAL-SOURCES.md.
 
-1. Confirmer ou reecrire les affirmations existantes concernant un laboratoire, 40 appareils achetes au detail, 400+ heures de tests, les scores, les prix verifies et les essais de fiabilite. Elles restent presentes dans les anciens contenus. Cette copie ne les valide pas.
-2. Confirmer les prix et offres Black Friday, les dates, les liens exacts des produits et les droits sur les images. Les liens marchands n'ont pas tous ete reverifies dans cette intervention.
-3. Fournir l'identite de l'exploitant et un email public fonctionnel. Completer et faire relire les pages juridiques selon les vrais prestataires, traitements, durees de conservation et pays vises. Les mentions de brouillon doivent etre remplacees par des informations exactes avant publication.
-4. Fournir le conteneur GTM (`GTM-...`) et l'identifiant GA4 (`G-...`). Creer la Google Tag et le declencheur `affiliate_click` dans GTM. Verifier le suivi avec les outils de diagnostic et un vrai clic de test.
-5. Choisir et configurer une plateforme de consentement adaptee, notamment une CMP certifiee Google si necessaire pour la diffusion dans les zones concernees. Consent Mode seul n'est pas une CMP et ne recueille pas le consentement. Aucun bandeau maison ne pretend le remplacer dans cette copie.
-6. Ajouter la ligne ads.txt exacte fournie par le propre compte AdSense apres sa configuration; n'activer aucune annonce avant approbation et controles.
-7. Confirmer les programmes d'affiliation approuves et les identifiants. Les anciennes mentions de participation dans le pied de page meritent egalement verification.
-8. Verifier le serveur de production, les variables, le domaine, les redirections HTTPS et la configuration d'hebergement sur une preproduction avant tout remplacement.
+Le style conserve la marque, la palette orange/noir/blanc et les polices. Les anciennes images non verifiees ne sont plus utilisees par les pages editoriales. Les mises en avant de promotions sont remplacees par des entrees vers les guides et leurs sources.
 
-## Installation locale
+## Affiliation et publicite
 
-Node.js 22 a ete utilise pour les tests. npm est le gestionnaire valide pour cette revision; `package-lock.json` fixe les versions resolues. L'ancien verrou Bun est retire pour eviter une selection ambiguë du gestionnaire par l'hebergeur.
+Amazon Associates n'est pas approuve. Aucun autre programme approuve n'a ete etabli. Les declarations d'adhesion/commissions acquises et les appels a l'achat affilies sont retires.
+
+La table `APPROVED_AFFILIATE_OFFERS` est vide. Les anciennes URL `/go/...` renvoient donc 404. Le composant de suivi est conserve pour une integration future, mais rien ne l'active tant qu'une destination approuvee n'est pas ajoutee volontairement. Il n'y a pas de simple bouton permettant d'activer les anciens liens non approuves.
+
+La pub display reste prevue comme premiere source de revenus, mais aucune regie n'est active. L'emplacement reserve est desactive. ads.txt ne contient qu'un commentaire, sans faux compte editeur.
+
+## Travail technique conserve
+
+- 21 vraies URL Next.js : cinq categories, six guides et pages de confiance/navigation.
+- Contenu editorial genere cote serveur au build (SSG), disponible dans le HTML initial et lisible sans JavaScript. Pas besoin d'un rendu serveur a chaque visite pour resoudre l'ancien routeur hash.
+- Navigation principale et pied de page explorables, migration des anciens liens hash, erreurs 404 reelles.
+- Metadonnees et URL canonique par page, sitemap genere, robots.txt adapte.
+- GTM prepare mais inactif sans l'identifiant reel. Quatre signaux Consent Mode en denied avant le chargement. GA4 doit etre configure dans GTM, sans deuxieme chargement dans le code.
+- Suppression de l'ancien JSON-LD affirmant des avis, prix ou disponibilites non verifies.
+- TypeScript non masque, ESLint propre, demarrage Node.js, package-lock.json pour des installations npm reproductibles.
+- Anciens scripts reinjectant des prix et scores supprimes; un controle de contenu est fourni dans scripts/audit-content.mjs.
+
+## Informations ou controles encore necessaires
+
+1. Identite de l'exploitant/auteur a confirmer par l'utilisateur. La marque VersusPeak est utilisee comme byline provisoire, sans inventer une equipe ni une identite legale.
+2. Identifiants GTM et GA4 reels. La reception reelle des evenements, les choix de consentement et les rapports GA4 ne sont pas encore testes.
+3. Completer et faire relire Privacy/Terms selon l'exploitant, les vrais prestataires, traitements, durees de conservation et pays vises. Ces pages sont encore marquees comme brouillons.
+4. Configurer une plateforme de consentement adaptee avant les services qui l'exigent. Consent Mode ne remplace pas une CMP ni un bandeau fonctionnel. Verifier les exigences de certification applicables avant Google ads dans les zones concernees.
+5. Faire approuver le site par la regie choisie, puis ajouter sa propre ligne ads.txt et les identifiants exacts. Cette revision ne garantit pas une approbation AdSense.
+6. Pour toute affiliation future : approbation reelle, liens controles, mise a jour des mentions et de la politique de confidentialite avant activation.
+7. Valider le resultat sur une preproduction de l'hebergement reel avant tout remplacement. Les reglages de domaine, serveur, secrets et bases externes ne font pas partie de la sauvegarde Git.
+
+## Installation
+
+Tests effectues avec Node.js 22 et npm. Le verrou Bun a ete retire pour eviter une selection ambiguë du gestionnaire.
 
 ```sh
 npm ci --ignore-scripts
 npx prisma generate
 cp .env.example .env.local
-# Completer seulement les valeurs confirmees.
+node scripts/audit-content.mjs
 npm run lint
 npx tsc --noEmit
 npm run build
 npm start
 ```
 
-Aucune migration ni remise a zero de base de donnees n'est necessaire pour ces modifications. Ne pas executer les scripts de reinitialisation Prisma sur une base existante.
+Aucune migration ou reinitialisation de base de donnees n'est necessaire pour cette intervention. Ne pas lancer les scripts Prisma de remise a zero sur une base existante.
 
-## Variables
+Variables :
 
-- `NEXT_PUBLIC_GTM_ID` : vide par defaut. GTM ne se charge pas sans un ID de format valide.
-- `NEXT_PUBLIC_ENABLE_AD_SLOTS` : `false` par defaut. `true` affiche la zone reservee, mais n'installe pas AdSense.
-- `NEXT_PUBLIC_CONTACT_EMAIL` : email public confirme. Sinon la page affiche clairement que cette information manque.
-- `NEXT_PUBLIC_AMAZON_TAG` : facultatif, propre identifiant Amazon Associates approuve.
+- `NEXT_PUBLIC_GTM_ID` : vide jusqu'a reception du propre conteneur.
+- `NEXT_PUBLIC_ENABLE_AD_SLOTS=false` : la valeur true ne fait qu'afficher une zone reservee, elle n'installe pas AdSense.
+- `NEXT_PUBLIC_CONTACT_EMAIL=contact@versuspeak.com` : adresse confirmee. La page l'utilise aussi comme valeur de secours.
 
-Les variables `NEXT_PUBLIC_` font partie du code envoye au navigateur. Ne jamais y mettre de secret. Reconstruire le site apres modification de ces variables.
+Les valeurs NEXT_PUBLIC_ sont visibles par les visiteurs. Ne jamais y mettre de secret et reconstruire apres modification.
 
-## Controles effectues
+## Verification de cette revision
 
-- Build de production et verification TypeScript : reussis.
-- ESLint : aucune erreur ni avertissement apres corrections.
-- Les 21 URL du sitemap repondent 200 et contiennent un titre H1 et une URL canonique adaptes dans le HTML initial.
-- Quatre URL invalides renvoient 404, dont une destination marchande inconnue.
-- Guide lisible avec JavaScript desactive.
-- Migration d'un ancien lien hash vers son nouveau chemin : reussie.
-- Navigation mobile du menu vers les guides : reussie.
-- Verification de l'evenement `affiliate_click` dans le dataLayer local : reussie. Aucun clic de test n'a ete envoye a GA4 ou a une regie.
-- Captures inspectees sur ecran large et mobile 390 px, pas de debordement horizontal detecte, aucun message d'erreur JavaScript observe pendant ces tests.
+Build, TypeScript et ESLint reussis. Les 21 URL du sitemap repondent 200 avec H1 et canonique dans le HTML initial. Les pages inconnues et anciennes destinations affiliees inactives renvoient 404. Navigation mobile, migration hash et choix du comparateur verifies. Article et ses liens de sources lisibles sans JavaScript. Aucun appel a l'achat affilie ni script GTM actif dans la configuration par defaut. Mailto du contact confirme. Aucun message d'erreur JavaScript observe pendant ces controles. Captures desktop/mobile inspectees, sans debordement horizontal dans les vues controlees.
 
-Non testes : reception reelle GA4/GTM, consentement CMP, annonces AdSense, statistiques de revenus, integration a l'hebergeur, tous les liens et toutes les images du site, preuve des affirmations editoriales.
+Details : REVIEW-TESTS.txt. Un controle automatise de motifs anciens ne constitue pas une certification factuelle ou juridique.
 
-## Revenir au point de depart
+## Restaurer le point de depart sans ecraser le travail
 
-Le ZIP `versuspeak-backup-original.zip` contient les fichiers sources initiaux.
-Le fichier `versuspeak-backup-original.bundle` conserve egalement l'historique Git disponible.
-
-Pour restaurer sans ecraser le travail en cours, creer un autre dossier :
+Le ZIP original conserve les fichiers initiaux; le bundle original conserve aussi l'historique disponible.
 
 ```sh
 git clone versuspeak-backup-original.bundle versuspeak-restored
 cd versuspeak-restored
 git rev-parse HEAD
-# Resultat attendu : 0cddbda249166fdafec295554d758151d63f6d9e
+# attendu : 0cddbda249166fdafec295554d758151d63f6d9e
 ```
 
-Cette sauvegarde couvre le depot uniquement, pas les reglages de l'hebergeur, les secrets, une base externe ou les ressources non suivies par Git. Toute remise en production doit etre validee separement.
+Cette restauration cree un autre dossier. Elle ne remet pas automatiquement un hebergement en production et ne restaure pas les elements externes au depot.

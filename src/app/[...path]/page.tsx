@@ -4,7 +4,7 @@ import { VersusPeakApp } from '@/components/versuspeak-app';
 import { CATEGORIES } from '@/lib/data';
 import { ARTICLES } from '@/lib/articles';
 import type { View } from '@/lib/types';
-const titles: Record<string, string> = { about: 'About VersusPeak', compare: 'Compare products', deals: 'Appliance and TV deals', articles: 'Buying guides', methodology: 'Editorial methodology', privacy: 'Privacy Policy', disclosure: 'Affiliate Disclosure', terms: 'Terms of Use', contact: 'Contact VersusPeak' };
+const titles: Record<string, string> = { about: 'About VersusPeak', compare: 'Compare products', deals: 'Appliance offer checklist', articles: 'Buying guides', methodology: 'Editorial methodology', privacy: 'Privacy Policy', disclosure: 'Affiliate Disclosure', terms: 'Terms of Use', contact: 'Contact VersusPeak' };
 function resolve(path: string[]) {
  if (path.length === 2 && path[0] === 'articles') {
   const article = ARTICLES.find(a => a.slug === path[1]);
