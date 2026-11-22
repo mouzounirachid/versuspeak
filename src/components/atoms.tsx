@@ -109,7 +109,7 @@ export function DisclosureNote({ onView }: { onView?: () => void }) {
         <span>
           Learn more in our{' '}
           <a
-            href="#disclosure"
+            href="/disclosure"
             className="font-semibold text-orange-700 underline underline-offset-2 hover:text-orange-800"
           >
             affiliate disclosure
@@ -181,7 +181,6 @@ export function ProductThumb({ product, className = '' }: { product: Product; cl
     <div
       className={`relative overflow-hidden rounded-xl border border-stone-200/80 bg-white ${className}`}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={`/images/products/${product.id}.jpg`}
         alt={product.name}

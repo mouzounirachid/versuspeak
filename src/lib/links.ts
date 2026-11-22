@@ -1,5 +1,6 @@
 import type { Product, Retailer } from './types';
-import { SITE } from './data';
+const AMAZON_TAG = process.env.NEXT_PUBLIC_AMAZON_TAG;
+const amazonTag = () => AMAZON_TAG ? `&tag=${encodeURIComponent(AMAZON_TAG)}` : '';
 
 const q = (s: string) => encodeURIComponent(s);
 
@@ -183,15 +184,15 @@ export function ctaRetailers(p: Product): Retailer[] {
   return out;
 }
 
-export function retailerUrl(r: Retailer, p: Product): string {
+export function retailerDestination(r: Retailer, p: Product): string {
   const deep = (DEEP_LINKS[p.id] ?? []).find((d) => d.retailer === r);
   if (deep) {
-    return r === 'amazon' ? `${deep.url}?tag=${SITE.amazonTag}` : deep.url;
+    return r === 'amazon' ? `${deep.url}${AMAZON_TAG ? `?tag=${encodeURIComponent(AMAZON_TAG)}` : ''}` : deep.url;
   }
   const term = searchTerms(p);
   switch (r) {
     case 'amazon':
-      return `https://www.amazon.com/s?k=${q(term)}&tag=${SITE.amazonTag}`;
+      return `https://www.amazon.com/s?k=${q(term)}${amazonTag()}`;
     case 'bestbuy':
       return `https://www.bestbuy.com/site/searchpage.jsp?st=${q(term)}`;
     case 'lowes':
@@ -242,3 +243,8 @@ export const OTHER_RETAILER_LABELS: Record<Exclude<Retailer, 'amazon'>, string> 
   lowes: 'Lowe’s',
   homedepot: 'Home Depot',
 };
+
+/** First-party route uses only known products and retailers. */
+export function retailerUrl(r: Retailer, p: Product): string {
+ return `/go/${encodeURIComponent(p.id)}/${r}`;
+}

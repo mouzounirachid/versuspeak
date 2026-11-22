@@ -86,6 +86,7 @@ export type Deal = {
 };
 
 export type View =
+  | 'about'
   | 'home'
   | 'refrigerators'
   | 'washers'

@@ -322,10 +322,9 @@ export function HomeView({ onNavigate }: { onNavigate: (v: View) => void }) {
             {ARTICLES.map((a) => (
               <a
                 key={a.slug}
-                href={`#articles/${a.slug}`}
+                href={`/articles/${a.slug}`}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-stone-200/80 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-300 hover:shadow-xl"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={a.image}
                   alt={a.title}

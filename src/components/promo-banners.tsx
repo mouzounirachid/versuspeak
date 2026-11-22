@@ -16,7 +16,7 @@ export function PromoBanner({ variant = 'deals', slug }: { variant?: 'deals' | '
   if (variant === 'deals') {
     return (
       <a
-        href="#deals"
+        href="/deals"
         className="group relative my-8 flex flex-wrap items-center justify-between gap-4 overflow-hidden rounded-2xl bg-gradient-to-r from-stone-950 via-stone-900 to-stone-950 px-6 py-5 shadow-xl shadow-orange-950/20 transition-all hover:shadow-2xl md:px-8"
       >
         <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_right,rgba(234,88,12,0.35),transparent_55%)]" aria-hidden />
@@ -50,7 +50,7 @@ export function PromoBanner({ variant = 'deals', slug }: { variant?: 'deals' | '
   if (variant === 'compare') {
     return (
       <a
-        href="#compare"
+        href="/compare"
         className="group my-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-stone-200 bg-gradient-to-r from-stone-50 to-orange-50/60 px-6 py-5 shadow-sm transition-all hover:border-orange-300 hover:shadow-md md:px-8"
       >
         <span className="flex items-center gap-4">
@@ -74,7 +74,7 @@ export function PromoBanner({ variant = 'deals', slug }: { variant?: 'deals' | '
   const article = (slug ? getArticle(slug) : undefined) ?? ARTICLES[0];
   return (
     <a
-      href={`#articles/${article.slug}`}
+      href={`/articles/${article.slug}`}
       className="group my-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-orange-200/80 bg-gradient-to-r from-orange-50 via-amber-50/60 to-orange-50 px-6 py-5 shadow-sm transition-all hover:border-orange-400 hover:shadow-md md:px-8"
     >
       <span className="flex items-center gap-4">
@@ -100,7 +100,7 @@ export function ReadNextPromo({ slot = 0, excludeSlug }: { slot?: number; exclud
   const article = pool.length > 0 ? pool[slot % pool.length] : ARTICLES[0];
   return (
     <a
-      href={`#articles/${article.slug}`}
+      href={`/articles/${article.slug}`}
       className="group my-8 flex gap-5 overflow-hidden rounded-2xl border border-stone-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-300 hover:shadow-xl sm:p-6"
     >
       <span className="hidden w-40 shrink-0 flex-col items-center justify-center gap-1 rounded-xl bg-gradient-to-br from-stone-950 via-stone-900 to-orange-950/80 text-white sm:flex" aria-hidden>

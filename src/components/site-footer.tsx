@@ -15,6 +15,7 @@ const CATEGORY_LINKS: FooterLink[] = [
 ];
 
 const COMPANY_LINKS: FooterLink[] = [
+  { view: 'about', label: 'About VersusPeak' },
   { view: 'methodology', label: 'How We Test' },
   { view: 'articles', label: 'Guides & Analysis' },
   { view: 'disclosure', label: 'Affiliate Disclosure' },
@@ -49,9 +50,9 @@ export function SiteFooter({ onNavigate }: { onNavigate: (v: View) => void }) {
           <ul className="mt-4 space-y-2.5">
             {CATEGORY_LINKS.map((l) => (
               <li key={l.view + l.label}>
-                <button onClick={() => onNavigate(l.view)} className="text-sm text-stone-300 transition-colors hover:text-orange-400">
+                <a href={l.view === 'home' ? '/' : `/${l.view}`}  className="text-sm text-stone-300 transition-colors hover:text-orange-400">
                   {l.label}
-                </button>
+                </a>
               </li>
             ))}
           </ul>
@@ -62,9 +63,9 @@ export function SiteFooter({ onNavigate }: { onNavigate: (v: View) => void }) {
           <ul className="mt-4 space-y-2.5">
             {COMPANY_LINKS.map((l) => (
               <li key={l.view + l.label}>
-                <button onClick={() => onNavigate(l.view)} className="text-sm text-stone-300 transition-colors hover:text-orange-400">
+                <a href={l.view === 'home' ? '/' : `/${l.view}`}  className="text-sm text-stone-300 transition-colors hover:text-orange-400">
                   {l.label}
-                </button>
+                </a>
               </li>
             ))}
           </ul>

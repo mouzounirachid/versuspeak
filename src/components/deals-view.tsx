@@ -131,7 +131,7 @@ export function DealsView() {
       <PromoBanner variant="guide" slug="best-time-to-buy-appliances" />
 
       <a
-        href="#compare"
+        href="/compare"
         className="group flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-stone-200/80 bg-white px-6 py-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-300 hover:shadow-lg"
       >
         <span className="font-serif text-lg font-bold text-stone-900 md:text-xl">

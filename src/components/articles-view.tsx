@@ -49,10 +49,9 @@ export function ArticlesView() {
         {ARTICLES.map((a) => (
           <a
             key={a.slug}
-            href={`#articles/${a.slug}`}
+            href={`/articles/${a.slug}`}
             className="group flex flex-col overflow-hidden rounded-2xl border border-stone-200/80 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-300 hover:shadow-xl"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={a.image}
               alt={a.title}
@@ -96,7 +95,7 @@ export function ArticleView({ slug }: { slug: string }) {
         <h1 className="font-serif text-3xl font-bold text-stone-900">Article not found</h1>
         <p className="mt-3 text-stone-600">The guide you are looking for does not exist.</p>
         <a
-          href="#articles"
+          href="/articles"
           className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-b from-orange-500 to-orange-600 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md shadow-orange-600/25 transition-all hover:-translate-y-0.5"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden /> All guides
@@ -111,7 +110,7 @@ export function ArticleView({ slug }: { slug: string }) {
       <article className="mx-auto max-w-3xl px-4 py-10">
         <nav aria-label="Breadcrumb">
           <a
-            href="#articles"
+            href="/articles"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-stone-500 transition-colors hover:text-orange-700"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden /> All guides
@@ -129,7 +128,6 @@ export function ArticleView({ slug }: { slug: string }) {
             Updated {article.updated} · {article.readMinutes} min read · By VersusPeak Lab
           </p>
           <p className="mt-6 text-lg leading-relaxed text-stone-700">{article.excerpt}</p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={article.image}
             alt={article.title}

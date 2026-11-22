@@ -1,7 +1,9 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Flame, GitCompareArrows } from 'lucide-react';
+import { AdSlot } from './ad-slot';
 import { CATEGORIES } from '@/lib/data';
 import type { View } from '@/lib/types';
 import { SiteHeader } from './site-header';
@@ -12,7 +14,7 @@ import { ComparatorView } from './comparator-view';
 import { DealsView } from './deals-view';
 import { ArticleView, ArticlesView } from './articles-view';
 import { MethodologyView } from './methodology-view';
-import { DisclosureView, PrivacyView, TermsView, ContactView } from './legal-views';
+import { DisclosureView, PrivacyView, TermsView, ContactView, AboutView } from './legal-views';
 
 const VALID_VIEWS: View[] = [
   'home',
@@ -29,11 +31,12 @@ const VALID_VIEWS: View[] = [
   'disclosure',
   'terms',
   'contact',
+  'about',
 ];
 
 /** Sticky mobile conversion bar — quick access to the two highest-intent destinations. */
 function MobileCtaBar({ current, onNavigate }: { current: View; onNavigate: (v: View) => void }) {
-  if (current === 'deals') return null;
+  if (['deals', 'about', 'privacy', 'terms', 'contact', 'disclosure'].includes(current)) return null;
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-stone-200/80 bg-white/95 px-4 pb-[max(env(safe-area-inset-bottom),0.75rem)] pt-2.5 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] backdrop-blur-md lg:hidden">
       <div className="mx-auto flex max-w-6xl items-center gap-3">
@@ -55,44 +58,16 @@ function MobileCtaBar({ current, onNavigate }: { current: View; onNavigate: (v: 
   );
 }
 
-export function VersusPeakApp() {
-  const [view, setView] = useState<View>('home');
-  const [articleSlug, setArticleSlug] = useState<string | null>(null);
-
-  const applyHash = useCallback(() => {
-    const hash = window.location.hash.replace('#', '');
-    const [root, sub] = hash.split('/');
-    if (root === 'articles') {
-      setArticleSlug(sub ?? null);
-      setView('articles');
-    } else if (VALID_VIEWS.includes(hash as View)) {
-      setArticleSlug(null);
-      setView(hash as View);
-    }
-  }, []);
-
+export function VersusPeakApp({ initialView = 'home', articleSlug = null }: { initialView?: View; articleSlug?: string | null }) {
+  const router = useRouter();
+  const view = initialView;
   useEffect(() => {
-    // Defer the initial hash sync to after hydration to avoid a cascading render.
-    const raf = requestAnimationFrame(applyHash);
-    const onHashChange = () => {
-      applyHash();
-      window.scrollTo({ top: 0, behavior: 'auto' });
-    };
-    window.addEventListener('hashchange', onHashChange);
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener('hashchange', onHashChange);
-    };
-  }, [applyHash]);
-
-  const navigate = (v: View) => {
-    setArticleSlug(null);
-    setView(v);
-    if (window.location.hash !== `#${v}`) {
-      history.replaceState(null, '', `#${v}`);
-    }
-    window.scrollTo({ top: 0, behavior: 'auto' });
-  };
+    // Preserve existing shared hash links; unknown fragments stay on the page.
+    const legacy = window.location.hash.slice(1).replace(/^\//, '');
+    const [name] = legacy.split('/');
+    if (VALID_VIEWS.includes(name as View)) router.replace(name === 'home' ? '/' : `/${legacy}`);
+  }, [router]);
+  const navigate = (v: View) => router.push(v === 'home' ? '/' : `/${v}`);
 
   const category = CATEGORIES.find((c) => c.id === view);
 
@@ -111,6 +86,8 @@ export function VersusPeakApp() {
         {view === 'disclosure' && <DisclosureView />}
         {view === 'terms' && <TermsView />}
         {view === 'contact' && <ContactView />}
+        {view === 'about' && <AboutView />}
+        {['home', 'articles', 'refrigerators', 'washers', 'dryers', 'dishwashers', 'tvs'].includes(view) && <AdSlot id="editorial-bottom" />}
       </main>
       <SiteFooter onNavigate={navigate} />
       <MobileCtaBar current={view} onNavigate={navigate} />

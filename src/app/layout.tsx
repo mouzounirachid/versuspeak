@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import { TagManager } from '@/components/tag-manager';
 import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
@@ -26,11 +27,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://versuspeak.com"),
   title: {
     default:
-      "VersusPeak — Best Refrigerators, Washers, Dryers, Dishwashers & TVs of 2026 (Lab-Tested)",
+      "VersusPeak — Best Refrigerators, Washers, Dryers, Dishwashers & TVs of 2026",
     template: "%s | VersusPeak",
   },
   description:
-    "Independent lab tests of refrigerators, washing machines, dryers, dishwashers, and TVs. 40 models scored, ranked, and priced — every unit bought at retail, no sponsored picks.",
+    "Appliance and TV comparisons, specifications and buying guides. Check current prices and availability directly with retailers.",
   keywords: [
     "best appliances 2026",
     "best refrigerators 2026",
@@ -89,6 +90,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} antialiased bg-background text-foreground`}
       >
+        <TagManager />
         {children}
         <Toaster />
       </body>
