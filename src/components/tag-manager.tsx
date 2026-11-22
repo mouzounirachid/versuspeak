@@ -1,6 +1,6 @@
 import { GtmLoader } from './gtm-loader';
 
-/** The known container is stored, but remote tracking is explicitly disabled by default. */
+/** Default consent is denied before hydration. The client loader requires an explicit analytics opt-in. */
 export const DEFAULT_GTM_ID = 'GTM-P44DRGH4';
 
 export function TagManager() {
