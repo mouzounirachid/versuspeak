@@ -12,6 +12,7 @@ export type PhotoKey = keyof typeof PHOTOS;
 export function articlePhoto(slug: string): PhotoKey {
  if (slug.includes('refrigerator')) return 'refrigerators';
  if (slug.includes('speed-queen')) return 'washers';
+ if (slug.includes('dryers')) return 'dryers';
  if (slug.includes('dishwasher')) return 'dishwashers';
  if (slug.includes('oled')) return 'tvs';
  return 'kitchen';
@@ -22,4 +23,4 @@ export function EditorialPhoto({ kind, model = false, compact = false }: { kind:
   <Image src={`/images/editorial/${p.file}.webp`} alt={p.alt} width={1200} height={800} className={`w-full object-cover ${compact ? 'aspect-[3/2]' : 'aspect-[16/9]'}`} sizes={compact ? '(max-width: 768px) 100vw, 40vw' : '(max-width: 768px) 100vw, 900px'} />
   <figcaption className="px-4 py-3 text-xs leading-5 text-stone-600">Illustrative photo{model ? ', not the model described' : ', not a product test'}. <a className="underline underline-offset-2" href={p.source} target="_blank" rel="noopener noreferrer">{p.author} / Pexels</a>. <a className="underline underline-offset-2" href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">License</a>.</figcaption>
  </figure>;
-}
+           }
