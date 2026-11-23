@@ -1,5 +1,5 @@
 export type CatalogOffer = { listingModel: string; variant: string; locationContext: string; seller: string; url: string; price: number; currency: "USD"; checkedAt: string; availability: string; terms: string };
-export type CatalogProduct = { id: string; category: string; brand: string; name: string; originalModel: string; status: "verified" | "pending"; specs: {label:string;value:string}[]; sourceUrl: string | null; sourceTitle: string; checkedAt: string; note: string; offers: CatalogOffer[] };
+export type CatalogProduct = { id: string; category: string; brand: string; name: string; originalModel: string; status: "verified" | "pending"; specs: {label:string;value:string}[]; sourceUrl: string | null; sourceTitle: string; checkedAt: string; note: string; offers: CatalogOffer[]; amazon?: { url: string; checkedAt: string } };
 export const CATALOG: CatalogProduct[] = [
   {
     "id": "lg-lryxs2706s",
@@ -179,6 +179,7 @@ export const CATALOG: CatalogProduct[] = [
     "sourceUrl": "https://www.whirlpool.com/content/dam/global/documents/202001/specification-sheet-wrf535swhspecsheetv01.pdf",
     "sourceTitle": "Manufacturer documentation",
     "checkedAt": "2026-11-22",
+    "amazon": { "url": "https://www.amazon.com/dp/B07BQHG11B?tag=versuspeak-20", "checkedAt": "2026-11-23" },
     "note": "",
     "offers": [
       {
@@ -337,6 +338,7 @@ export const CATALOG: CatalogProduct[] = [
     "sourceUrl": "https://www.lg.com/us/support/products/documents/WM4000H_A_spec_sheet.pdf",
     "sourceTitle": "Manufacturer documentation",
     "checkedAt": "2026-11-22",
+    "amazon": { "url": "https://www.amazon.com/dp/B0B1LPV6Z5?tag=versuspeak-20", "checkedAt": "2026-11-23" },
     "note": "",
     "offers": [
       {
@@ -965,6 +967,7 @@ export const CATALOG: CatalogProduct[] = [
     "sourceUrl": "https://www.amana.com/content/dam/global/documents/202003/specification-sheet-ned4655especsheetv01.pdf",
     "sourceTitle": "Manufacturer documentation",
     "checkedAt": "2026-11-22",
+    "amazon": { "url": "https://www.amazon.com/dp/B00VGUTJPA?tag=versuspeak-20", "checkedAt": "2026-11-23" },
     "note": "",
     "offers": [
       {
@@ -1025,6 +1028,7 @@ export const CATALOG: CatalogProduct[] = [
     "sourceUrl": "https://media3.bosch-home.com/Documents/20595211_SHP78CM5N%20Spec%20Sheet.pdf",
     "sourceTitle": "Manufacturer documentation",
     "checkedAt": "2026-11-22",
+    "amazon": { "url": "https://www.amazon.com/dp/B0FBY6WX38?tag=versuspeak-20", "checkedAt": "2026-11-23" },
     "note": "",
     "offers": [
       {
@@ -1351,6 +1355,7 @@ export const CATALOG: CatalogProduct[] = [
     "sourceUrl": "https://www.lg.com/us/tvs/lg-oled65c5pua-oled-4k-tv",
     "sourceTitle": "Manufacturer documentation",
     "checkedAt": "2026-11-22",
+    "amazon": { "url": "https://www.amazon.com/dp/B0DYQM4BDB?tag=versuspeak-20", "checkedAt": "2026-11-23" },
     "note": "Manufacturer identifies this as a 2025 model, not a new 2026 TV.",
     "offers": [
       {
